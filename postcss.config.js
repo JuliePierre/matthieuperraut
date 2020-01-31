@@ -3,7 +3,9 @@ module.exports = {
     require('postcss-import'),
     require('postcss-css-variables'),
     require('postcss-custom-media'),
-    require('postcss-inline-svg'),
+    require('postcss-inline-svg')({
+      paths: ['frontend/shared/static', 'node_modules/@fortawesome/fontawesome-free/svgs']
+    }),
     require('postcss-nested'),
     require('postcss-url'),
     require('postcss-flexbugs-fixes'),

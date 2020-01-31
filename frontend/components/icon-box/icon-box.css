@@ -1,0 +1,24 @@
+@import '../../init';
+
+.icon-box {
+  &--vertical {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      flex: 0 0 30%;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import '../../init';
+
+.container {
+  width: 85vw;
+  max-width: 130rem;
+  margin: 0 auto;
+}

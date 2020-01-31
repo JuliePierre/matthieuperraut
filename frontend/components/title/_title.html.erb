@@ -1,1 +1,8 @@
-<h1><%= yield %></h1>
+<div class="title">
+  <% if defined?(_title) %>
+    <h2><%= _title %></h2>
+  <% end %>
+  <% if defined?(_subtitle) %>
+    <h3><%= _subtitle %></h3>
+  <% end %>
+</div>

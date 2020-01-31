@@ -28,6 +28,7 @@
     }
 
     &__link {
+      font-size: 0.8rem;
       text-transform: uppercase;
       transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
     }

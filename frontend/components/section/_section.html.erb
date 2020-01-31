@@ -1,4 +1,4 @@
-<section class="<%= defined?(_custom_class) ? _custom_class.split(' ').reduce("") { |memo, c| "section--#{c} #{memo}" } : '' %>" style='<%= defined?(_background_image) ? "background-image: url('#{asset_pack_path("media/shared/static/#{_background_image}")}')" : '' %>'>
+<section class="<%= defined?(_custom_class) ? _custom_class : '' %>" style='<%= defined?(_background_image) ? "background-image: url('#{asset_pack_path("media/shared/static/#{_background_image}")}')" : '' %>'>
   <%= yield %>
 </section>
 

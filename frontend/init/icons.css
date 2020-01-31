@@ -1,0 +1,14 @@
+.icon {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin-bottom: -2px;
+  height: 1em;
+  width: 1em;
+  transition: all 0.3s ease;
+}
+
+.icon-heart {
+  background: svg-load("regular/heart.svg", fill=blue);
+}

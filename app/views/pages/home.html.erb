@@ -7,6 +7,41 @@
     <h2 class="center italic focus">De la Mini Transat 2019 à la Route du Rhum 2022 !</h2>
   <% end %>
 
-  <%= c 'section', _background_image: 'matthieu-perraut-mini-transat.jpg' do %>
+  <%= c 'section', _custom_class: 'full-height', _background_image: 'matthieu-perraut-mini-transat.jpg' do %>
+    <h2 class="center italic focus">INSÉRER ICI LA VIDÉO DE LA MINI !</h2>
+  <% end %>
+
+  <%= c 'section', _custom_class: 'bg-main' do %>
+    <%= c 'container' do %>
+      <%= c 'title', _title: 'La Mini Transat', _subtitle: 'Une course mythique' %>
+      <%= c 'grid', layout: 'l--2fr' do %>
+        <div>
+          <p>La Mini Transat a été créée pour réagir au gigantisme des courses transatlantiques qui sont organisées depuis les années 70. Fondée en 1977 par l’Anglais Bob Salmon, la Mini arrive sur le territoire français en 1985 et s’élance tour à tour de Brest, Concarneau à destination des Antilles. Puis de 2001 à 2011 de La Rochelle vers Salvador de Bahia au Brésil, les escales se succèdent dans l’archipel espagnol des Canaries ou sur l’île portugaise de Madère.</p>
+          <p>La spécificité de la Mini Transat est l’absence de communication totale entre les concurrents et la terre. C’est cet isolement pendant la course qui fait la magie et le mystère de la Mini Transat.</p>
+          <p>Véritable épreuve sportive courue sur les plus petits bateaux de course au large existants, la Mini n’en demeure pas moins une véritable aventure pour chacun des skippers.</p>
+        </div>
+        <div>
+          <p>De tous âges, de toutes classes sociales et d’expériences nautiques diverses, les marins viennent à la Mini pour réaliser le rêve d’une vie, s’élancer dans une carrière professionnelle de coureur, mais tous s’accordent à dire : « Passe ta Mini d’abord ».</p>
+          <p>Les skippers doivent avant tout être de bons navigants, mais pas que : ils doivent aussi savoir préparer techniquement leur Mini (peinture, gréement, matériaux composites, électronique), se connaître personnellement au mieux (alimentation, efforts physiques, cycles de sommeil), et surtout être de bons communicants à terre afin d’attirer des partenaires dans leur Mini Transat.</p>
+          <p class="right">« Passe ta mini d’abord »</p>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= c 'section' do %>
+    <%= c 'container' do %>
+      <%= c 'grid', layout: 'l--2fr' do %>
+        <div>
+          <h2>INSÉRER ICI LE SCHÉMA DE LA COURSE : LA ROCHELLE - LE MARIN</h2>
+        </div>
+        <div class="center">
+          <%= c 'title', _subtitle: 'La Mini 2019 en chiffres' %>
+          <div>
+            <div class="icon icon-heart"></div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
   <% end %>
 <% end %>
