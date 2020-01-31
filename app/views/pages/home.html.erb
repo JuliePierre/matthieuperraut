@@ -1,3 +1,6 @@
-<%= c "page" do %>
-  <h1>Hola que tal</h1>
+<%= c 'page', page: 'home' do %>
+  <%= c 'hero',
+    background_image: 'matthieu-perraut-mini-transat.jpg',
+    title: 'Objectif : Route du Rhum 2022 !' do %>
+  <% end %>
 <% end %>

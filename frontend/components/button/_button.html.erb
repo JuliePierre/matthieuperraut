@@ -1,0 +1,5 @@
+<div class="btn-container">
+  <%= link_to text, path, {
+    class: "btn#{ defined?(_custom_class) ? _custom_class.split(' ').reduce("") { |memo, c| "#{memo} btn--#{c}" } : '' }",
+    target: (defined?(_target) ? _target : nil) } %>
+</div>

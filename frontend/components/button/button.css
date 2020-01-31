@@ -1,0 +1,63 @@
+@import "../../init";
+
+.btn-container {
+  text-align: center;
+}
+
+.btn {
+  font-size: 0.85rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--main);
+  border: 2px solid var(--main);
+  display: inline-block;
+  cursor: pointer;
+  max-width: 22rem;
+  border-radius: 5px;
+  padding: 1em 2em;
+  font-weight: 500;
+
+  &:hover {
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--light {
+    background-color: transparent;
+    color: var(--input-color);
+    border: 2px solid var(--input-border-color);
+    font-weight: lighter;
+    text-transform: none;
+    max-width: 25rem;
+
+    &:hover {
+      border: 2px solid var(--input-border-color);
+      background-color: var(--input-border-color);
+    }
+  }
+
+  &--disabled {
+    background-color: var(--input-border-color);
+    border: 2px solid var(--input-border-color);
+    color: var(--white);
+    text-transform: none;
+    max-width: 25rem;
+
+    &:hover {
+      border: 2px solid var(--input-border-color);
+      background-color: var(--input-border-color);
+      cursor: not-allowed;
+    }
+  }
+
+  &--large {
+    width: 100%;
+  }
+}
