@@ -8,3 +8,8 @@ import 'components/section/section'
 
 // MEDIA
 import 'shared/static/matthieu-perraut-mini-transat.jpg'
+
+// JAVASCRIPT
+import { manageNavbar } from 'components/navbar/navbar'
+
+manageNavbar()

@@ -1,0 +1,80 @@
+@import '../../init';
+
+.navbar-container {
+  margin: 0;
+  height: var(--navbarHeight);
+  padding: 0 3rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: background 0.3s ease-in-out;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    &__brand {
+      font-size: 1.5rem;
+    }
+
+    &__menu {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__link {
+      text-transform: uppercase;
+      transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+  }
+
+  &--transparent {
+    background: transparent;
+
+    .navbar {
+      &__brand {
+        color: var(--main);
+      }
+
+      &__link {
+        color: var(--main);
+        opacity: 1;
+
+        &.active {
+          color: var(--secondary);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &--blue {
+    background: var(--main);
+
+    .navbar {
+      &__brand {
+        color: var(--white);
+      }
+
+      &__link {
+        color: var(--white);
+        opacity: 1;
+
+        &.active {
+          color: var(--secondary);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .navbar__link:hover {
+    cursor: pointer;
+    color: var(--secondary);
+    opacity: 0.8;
+  }
+}
