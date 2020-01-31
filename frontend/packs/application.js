@@ -6,6 +6,7 @@ import 'components/button/button'
 import 'components/container/container'
 import 'components/grid/grid'
 import 'components/hero/hero'
+import 'components/icon-box/icon-box'
 import 'components/section/section'
 import 'components/title/title'
 

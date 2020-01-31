@@ -9,6 +9,14 @@
   transition: all 0.3s ease;
 }
 
-.icon-heart {
-  background: svg-load("regular/heart.svg", fill=blue);
+.icon-earth {
+  background: svg-load("solid/globe-americas.svg", fill=var(--secondary));
+}
+
+.icon-anchor {
+  background: svg-load("solid/anchor.svg", fill=var(--secondary));
+}
+
+.icon-medal {
+  background: svg-load("solid/medal.svg", fill=var(--secondary));
 }

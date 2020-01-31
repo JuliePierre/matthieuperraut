@@ -4,8 +4,8 @@
       <div>Matthieu Perraut</div>
     </div>
     <div class="navbar__menu">
-      <div class="navbar__link active">Accueil</div>
-      <div class="navbar__link">La Mini Transat</div>
+      <%= link_to "Accueil", root_path, class: 'navbar__link js-navbar__link active', 'data-target': 'accueil' %>
+      <%= link_to "La Mini Transat", root_path(anchor: 'mini-transat'), class: 'navbar__link js-navbar__link', 'data-target': 'mini-transat' %>
       <div class="navbar__link">Le programme</div>
       <div class="navbar__link">Le bateau</div>
       <div class="navbar__link">Médiathèque</div>

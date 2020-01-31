@@ -3,7 +3,7 @@
     <h1><span class="white">Objectif :</span> <span class="focus">Route du Rhum 2022 !</span></h1>
   <% end %>
 
-  <%= c 'section' do %>
+  <%= c 'section', _id: 'accueil' do %>
     <h2 class="center italic focus">De la Mini Transat 2019 à la Route du Rhum 2022 !</h2>
   <% end %>
 
@@ -11,7 +11,7 @@
     <h2 class="center italic focus">INSÉRER ICI LA VIDÉO DE LA MINI !</h2>
   <% end %>
 
-  <%= c 'section', _custom_class: 'bg-main' do %>
+  <%= c 'section', _custom_class: 'bg-main', _id: 'mini-transat' do %>
     <%= c 'container' do %>
       <%= c 'title', _title: 'La Mini Transat', _subtitle: 'Une course mythique' %>
       <%= c 'grid', layout: 'l--2fr' do %>
@@ -36,9 +36,11 @@
           <h2>INSÉRER ICI LE SCHÉMA DE LA COURSE : LA ROCHELLE - LE MARIN</h2>
         </div>
         <div class="center">
-          <%= c 'title', _subtitle: 'La Mini 2019 en chiffres' %>
+          <%= c 'title', _subtitle: 'Ma Mini 2019 en chiffres' %>
           <div>
-            <div class="icon icon-heart"></div>
+            <%= c 'icon-box', layout: 'horizontal', icon: 'earth', text: "4050 milles nautiques en solitaire entre La Rochelle et Le Marin, en Martinique" %>
+            <%= c 'icon-box', layout: 'horizontal', icon: 'anchor', text: "87 bateaux au départ de La Rochelle, 78 marins à bon port à l'arrivée" %>
+            <%= c 'icon-box', layout: 'horizontal', icon: 'medal', text: "25ème série sur 65 bateaux, 5ème bateau de sa génération" %>
           </div>
         </div>
       <% end %>
