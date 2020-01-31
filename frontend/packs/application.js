@@ -3,6 +3,7 @@ import 'init'
 // COMPONENTS
 import 'components/page/page'
 import 'components/button/button'
+import 'components/card/card'
 import 'components/container/container'
 import 'components/grid/grid'
 import 'components/hero/hero'

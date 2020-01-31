@@ -63,4 +63,98 @@
     <% end %>
   <% end %>
 
+  <%= c 'section', _custom_class: 'bg-main', _id: 'objectif' do %>
+    <%= c 'container', _custom_class: 'small-and-centered' do %>
+      <%= c 'title', _title: "L'objectif", _subtitle: 'Etre au départ de la Route du Rhum 2022' %>
+      <div>
+        <p>Événement sportif et maritime, La Route du Rhum compte aussi parmi les manifestations les plus populaires. Depuis sa première édition, la magie de cette transatlantique opère au départ de Saint-Malo. Tous les quatre ans, la cité corsaire ouvre en grand les portes de l’imaginaire marin et lance au public une formidable invitation : celle de l’évasion et de l’émerveillement devant le rêve d’absolu de navigateurs solitaires, des «va-t-en mer» parés à disputer un face à face avec l’océan d’une rare intensité...</p>
+        <p>Avis de grand vent de liberté ! Comme l’a voulu son concepteur Michel Etevenon, la Route du Rhum fait depuis toujours la part belle à la diversité. Depuis 1978, elle rassemble, sur la même ligne de départ et le même parcours, monocoques et multicoques, petits coursiers océaniques et géants des mers. Cette transatlantique d’un nouveau genre ouvre les chemins de l’Atlantique aux voiliers de tout poil, elle révèle ainsi la farouche vitalité de la course au large.</p>
+      </div>
+    <% end %>
+  <% end %>
+
+  <%= c 'section', _custom_class: 'bg-main no-padding' do %>
+    <%= c 'container' do %>
+      <%= c 'card', _custom_class: 'large' do %>
+        <%= c 'title', _subtitle: 'Trois ans de courses et de préparation' %>
+        <%= c 'grid', layout: 'l--3fr' do %>
+          <div>
+            <h4 class="brand italic">2020</h4>
+            <p>Grand Prix Guyader <span class="info">en équipage</span></p>
+            <p>Tour de Belle-Ile <span class="info">en équipage</span></p>
+            <p>Armen Race <span class="brand">en double</span></p>
+            <p>Cowes Dinard <span class="info">en équipage</span></p>
+            <p>Normandy Channel Race <span class="brand">en double</span></p>
+          </div>
+          <div>
+            <h4 class="brand italic">2021</h4>
+            <p>Grand Prix Guyader <span class="info">en équipage</span></p>
+            <p>Normandy Channel Race <span class="brand">en double</span></p>
+            <p>Les Sables - Horta <span class="brand">en double</span></p>
+            <p>Rolew Fastnet Race <span class="info">en équipage</span></p>
+            <p>Transat Jacques Vabre <span class="brand">en double</span></p>
+          </div>
+          <div>
+            <h4 class="brand italic">2022</h4>
+            <p>Grand Prix Guyader <span class="info">en équipage</span></p>
+            <p>Armen Race <span class="brand">en double</span></p>
+            <p>Drheam Cup <span class="focus">en solitaire</span></p>
+            <p>Route du Rhum <span class="focus">en solitaire</span></p>
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= c 'section', _background_image: 'matthieu-perraut-mini-transat.jpg', _custom_class: 'blue' do %>
+    <%= c 'grid', layout: 'l--3fr' do %>
+      <div class="center">
+        <h2>LOGO 1</h2>
+      </div>
+      <div class="center">
+        <h2>LOGO 2</h2>
+      </div>
+      <div class="center">
+        <h2>LOGO 3</h2>
+      </div>
+    <% end %>
+  <% end %>
+
+  <%= c 'section', _custom_class: 'bg-main no-padding', _id: 'bateau' do %>
+    <%= c 'container' do %>
+      <%= c 'card', _custom_class: 'large' do %>
+        <%= c 'title', _title: 'Le bateau', _subtitle: 'Plus vite, plus haut, plus fort' %>
+        <div class="card__intro">
+          <p> Un bateau plus grand et doté de technologies plus poussées. Le Class40 est équipé d’un système de navigation avec cartographie intégrée ainsi que d’un ordinateur de bord pour recevoir la météo et ajuster la stratégie en fonction des derniers modèles météo. L’objectif de ce projet est de naviguer de façon performante en utilisant toutes les dernières technologies. Par ailleurs, les Class40 sont des bateaux monotypes, comme les Minis de série, ce qui promet de belles bagares sur l’eau !</p>
+        </div>
+        <div>
+          <h2>INSÉRER ICI LES PNG DES BATEAUX</h2>
+          <h2 class="center italic focus">Les Class 40 sont de gros minis !</h2>
+          <%= c 'button', text: 'Voir le site de la Class 40', path: 'https://www.class40.com/fr/index/', _target: '_blank' %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= c 'section', _custom_class: 'bg-main', _id: 'mediatheque' do %>
+    <%= c 'container' do %>
+      <%= c 'title', _subtitle: 'Mon parcours en images' %>
+      <%= c 'grid', layout: 'special-media' do %>
+        <div class="one" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
+        <div class="two" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
+        <div class="three" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
+        <div class="four" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
+        <div class="five" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
+        <div class="six" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')">Six</div>
+      <% end %>
+      <%= c 'button', text: "Visiter la médiathèque", path: mediatheque_path, _custom_class: 'light' %>
+    <% end %>
+  <% end %>
+
+  <%= c 'section', _id: 'partenaires' do %>
+    <%= c 'container' do %>
+      <%= c 'title', _subtitle: 'Ils me font confiance' %>
+      <h2>Insérer ici les logos des partenaires</h2>
+    <% end %>
+  <% end %>
 <% end %>

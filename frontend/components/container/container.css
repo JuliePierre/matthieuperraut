@@ -4,4 +4,9 @@
   width: 85vw;
   max-width: 130rem;
   margin: 0 auto;
+
+  &.small-and-centered {
+    width: 60vw;
+    text-align: center;
+  }
 }

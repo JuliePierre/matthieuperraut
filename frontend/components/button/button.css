@@ -23,17 +23,28 @@
   font-weight: 500;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
-  &:hover {
-    background-color: transparent;
-    border: 2px solid var(--main);
-    color: var(--main);
-  }
-
   &:focus {
     outline: none;
+  }
+
+  &--light {
+    background-color: transparent;
+    border-color: var(--white);
+    color: var(--white);
   }
 
   &--large {
     width: 100%;
   }
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--main);
+  color: var(--main);
+}
+
+.btn--light:hover {
+  background-color: var(--white);
+  color: var(--main);
 }

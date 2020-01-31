@@ -1,0 +1,20 @@
+@import '../../init';
+
+.card {
+  padding: 2.5rem;
+  background-color: var(--white);
+  border-radius: 1px;
+  box-shadow: 1px 1px 4px var(--white);
+  color: var(--font-color);
+  text-align: center;
+
+  &__intro {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &.large {
+    width: 75vw;
+    margin: auto;
+  }
+}

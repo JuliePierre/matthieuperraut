@@ -9,4 +9,8 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  &.no-padding {
+    padding: 0;
+  }
 }

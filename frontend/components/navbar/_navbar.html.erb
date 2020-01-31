@@ -6,9 +6,9 @@
     <div class="navbar__menu">
       <%= link_to "Accueil", root_path, class: 'navbar__link js-navbar__link active', 'data-target': 'accueil' %>
       <%= link_to "La Mini Transat", root_path(anchor: 'mini-transat'), class: 'navbar__link js-navbar__link', 'data-target': 'mini-transat' %>
-      <div class="navbar__link">L'objectif</div>
-      <div class="navbar__link">Le bateau</div>
-      <div class="navbar__link">Médiathèque</div>
+      <%= link_to "L'objectif", root_path(anchor: 'objectif'), class: 'navbar__link js-navbar__link', 'data-target': 'objectif' %>
+      <%= link_to "Le bateau", root_path(anchor: 'bateau'), class: 'navbar__link js-navbar__link', 'data-target': 'bateau' %>
+      <%= link_to "La médiathèque", mediatheque_path, class: 'navbar__link js-navbar__link', 'data-target': 'mediatheque' %>
       <div class="navbar__link">Les partenaires</div>
     </div>
   </div>

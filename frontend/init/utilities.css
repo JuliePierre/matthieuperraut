@@ -15,8 +15,16 @@
   color: var(--white);
 }
 
+.info {
+  color: var(--green);
+}
+
 .focus {
   color: var(--secondary);
+}
+
+.brand {
+  color: var(--main);
 }
 
 .italic {
@@ -26,6 +34,11 @@
 .bg-main {
   background-color: var(--main);
   color: var(--white);
+}
+
+.bg-white {
+  background-color: var(--white);
+  color: var(--font-color);
 }
 
 .large-text {
