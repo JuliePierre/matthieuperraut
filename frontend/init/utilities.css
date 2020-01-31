@@ -1,3 +1,20 @@
 :root {
   --navbarHeight: 76px;
 }
+
+/* POLICES */
+.center {
+  text-align: center;
+}
+
+.white {
+  color: var(--white);
+}
+
+.focus {
+  color: var(--secondary);
+}
+
+.italic {
+  font-style: italic;
+}

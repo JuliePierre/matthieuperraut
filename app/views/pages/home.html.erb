@@ -1,10 +1,12 @@
 <%= c 'page', page: 'home' do %>
-  <%= c 'hero',
-    background_image: 'matthieu-perraut-mini-transat.jpg',
-    title: 'Objectif : Route du Rhum 2022 !' do %>
+  <%= c 'hero', background_image: 'matthieu-perraut-mini-transat.jpg' do %>
+    <h1><span class="white">Objectif :</span> <span class="focus">Route du Rhum 2022 !</span></h1>
   <% end %>
 
   <%= c 'section' do %>
-    <h2>De la Mini Transat 2019 à la Route du Rhum 2022 !</h2>
+    <h2 class="center italic focus">De la Mini Transat 2019 à la Route du Rhum 2022 !</h2>
+  <% end %>
+
+  <%= c 'section', _background_image: 'matthieu-perraut-mini-transat.jpg' do %>
   <% end %>
 <% end %>

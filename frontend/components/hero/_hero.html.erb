@@ -1,9 +1,5 @@
 <section class="hero js-hero" style='<%= "background-image: url('#{asset_pack_path("media/shared/static/#{background_image}")}')" %>'>
   <div class="hero__content">
-    <h2 class="hero__title"><%= title %></h2>
-    <% if defined?(_button) %>
-      <div class="hero__button"><%= _button %></div>
-    <% end %>
+    <%= yield %>
   </div>
 </section>
-
