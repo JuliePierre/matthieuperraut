@@ -37,3 +37,7 @@ h1 {
 h2 {
   font-size: 1.75rem;
 }
+
+h3 {
+  line-height: 3em;
+}

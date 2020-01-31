@@ -2,9 +2,11 @@
 
 .btn-container {
   text-align: center;
+  margin: 2rem 0;
 }
 
 .btn {
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 0.85rem;
   line-height: 1rem;
   text-transform: uppercase;
@@ -19,11 +21,13 @@
   border-radius: 5px;
   padding: 1em 2em;
   font-weight: 500;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
-  /* &:hover {
-    background-color: var(--orange);
-    border: 2px solid var(--orange);
-  } */
+  &:hover {
+    background-color: transparent;
+    border: 2px solid var(--main);
+    color: var(--main);
+  }
 
   &:focus {
     outline: none;

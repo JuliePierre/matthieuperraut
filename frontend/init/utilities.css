@@ -27,3 +27,7 @@
   background-color: var(--main);
   color: var(--white);
 }
+
+.large-text {
+  font-size: 2rem;
+}
