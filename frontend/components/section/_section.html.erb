@@ -1,4 +1,4 @@
-<section class="js-section <%= defined?(_custom_class) ? _custom_class : '' %>" style='<%= defined?(_background_image) ? "background-image: url('#{asset_pack_path("media/shared/static/#{_background_image}")}')" : '' %>' id="<%= _id if defined?(_id) %>">
+<section class="js-section <%= defined?(_custom_class) ? _custom_class : '' %>" style='<%= defined?(_background_image) ? "background-image: linear-gradient(360deg, rgba(12,33,48,1), rgba(12,33,48,0.25) 100%), url('#{asset_pack_path("media/shared/static/#{_background_image}")}')" : '' %>' id="<%= _id if defined?(_id) %>">
   <%= yield %>
 </section>
 

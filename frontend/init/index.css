@@ -4,6 +4,10 @@
 @import "icons.css";
 @import "utilities.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,10 +15,10 @@
 body {
   font-family: 'EB Garamond', serif;
   font-size: 16px;
-  line-height: 1.2em;
-  letter-spacing: 0;
+  line-height: 1.5em;
+  letter-spacing: 1px;
   font-weight: 400;
-  color: var(--font-color);
+  color: var(--main);
   position: relative;
   background-color: var(--white);
 }
@@ -25,12 +29,16 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Nunito Sans', sans-serif;
 }
 
 h1 {
-  font-size: 2.5rem;
+  margin-top: 0;
+  font-size: 3.5rem;
+  letter-spacing: 0.05em;
+  font-weight: 300;
 }
 
 h2 {
@@ -38,10 +46,15 @@ h2 {
 }
 
 h3 {
-  line-height: 3em;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-family: 'Lobster', cursive;
-  font-size: 2.5rem;
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  letter-spacing: 0;
+  line-height: 0.6em;
+  padding: 0.2em 0.4em 0;
+  margin: 0 0 1em 0;
 }

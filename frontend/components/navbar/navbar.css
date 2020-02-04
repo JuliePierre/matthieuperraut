@@ -25,6 +25,7 @@
       width: 50%;
       display: flex;
       justify-content: space-between;
+      font-weight: 600;
     }
 
     &__link {
@@ -39,11 +40,11 @@
 
     .navbar {
       &__brand {
-        color: var(--main);
+        color: var(--white);
       }
 
       &__link {
-        color: var(--main);
+        color: var(--white);
         opacity: 1;
 
         &.active {

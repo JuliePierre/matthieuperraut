@@ -9,4 +9,13 @@
     width: 60vw;
     text-align: center;
   }
+
+  &.very-small {
+    width: 45vw;
+  }
+
+  &.very-small-and-centered {
+    width: 45vw;
+    text-align: center;
+  }
 }

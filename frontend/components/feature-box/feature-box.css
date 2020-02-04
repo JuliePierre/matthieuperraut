@@ -1,0 +1,19 @@
+@import '../../init';
+
+.feature-box {
+  min-height: 70vh;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.with-background {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &.no-padding {
+    padding: 0 1rem;
+  }
+}

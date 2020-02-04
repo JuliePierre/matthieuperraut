@@ -1,5 +1,5 @@
 :root {
-  --navbarHeight: 76px;
+  --navbarHeight: 52px;
 }
 
 /* POLICES */
@@ -27,6 +27,16 @@
   color: var(--main);
 }
 
+.underlined--red {
+  display: inline-flex;
+  background-color: var(--secondary);
+}
+
+.underlined--yellow {
+  display: inline-flex;
+  background-color: var(--yellow);
+}
+
 .italic {
   font-style: italic;
 }
@@ -43,4 +53,8 @@
 
 .large-text {
   font-size: 2rem;
+}
+
+p.no-margin {
+  margin: 0;
 }
