@@ -16,7 +16,7 @@
 }
 
 .info {
-  color: var(--green);
+  color: var(--yellow);
 }
 
 .focus {
@@ -35,6 +35,7 @@
 .underlined--yellow {
   display: inline-flex;
   background-color: var(--yellow);
+  color: var(--main);
 }
 
 .italic {

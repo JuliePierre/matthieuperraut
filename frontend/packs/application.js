@@ -13,6 +13,7 @@ import 'components/section/section'
 import 'components/space/space'
 import 'components/subtitle/subtitle'
 import 'components/title/title'
+import 'components/video-wrapper/video-wrapper'
 
 // MEDIA
 import 'shared/static/matthieu-perraut-mini-transat.jpg'

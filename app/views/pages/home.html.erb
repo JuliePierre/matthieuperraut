@@ -12,8 +12,11 @@
     </div>
   <% end %>
 
-  <%= c 'section', _custom_class: 'full-height', _background_image: 'matthieu-perraut-mini-transat.jpg' do %>
-    <h2 class="center italic focus">INSÉRER ICI LA VIDÉO DE LA MINI !</h2>
+  <%= c 'section', _custom_class: 'full-height no-padding' do %>
+    <%= c 'video-wrapper' do %>
+      <iframe width="560" height="349" src="https://www.youtube.com/embed/AFPQ7IpMDng" frameborder="0" allow="autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+    <% end %>
+    </div>
   <% end %>
 
   <%= c 'section', _id: 'mini-transat' do %>
@@ -93,10 +96,11 @@
   <%= c 'section', _custom_class: 'bg-main no-padding' do %>
     <%= c 'container' do %>
       <%= c 'card', _custom_class: 'large' do %>
-        <%= c 'title', title: 'Trois ans de courses et de préparation' %>
+        <%= c 'title', title: 'Trois ans de courses et de préparation', _custom_class: 'main' %>
+        <%= c 'space', height: '4rem' %>
         <%= c 'grid', layout: 'l--3fr' do %>
           <div>
-            <h4 class="brand italic">2020</h4>
+            <%= c 'subtitle', subtitle: '2020', _custom_class: 'secondary' %>
             <p>Grand Prix Guyader <span class="info">en équipage</span></p>
             <p>Tour de Belle-Ile <span class="info">en équipage</span></p>
             <p>Armen Race <span class="brand">en double</span></p>
@@ -104,7 +108,7 @@
             <p>Normandy Channel Race <span class="brand">en double</span></p>
           </div>
           <div>
-            <h4 class="brand italic">2021</h4>
+            <%= c 'subtitle', subtitle: '2021', _custom_class: 'secondary' %>
             <p>Grand Prix Guyader <span class="info">en équipage</span></p>
             <p>Normandy Channel Race <span class="brand">en double</span></p>
             <p>Les Sables - Horta <span class="brand">en double</span></p>
@@ -112,7 +116,7 @@
             <p>Transat Jacques Vabre <span class="brand">en double</span></p>
           </div>
           <div>
-            <h4 class="brand italic">2022</h4>
+            <%= c 'subtitle', subtitle: '2022', _custom_class: 'secondary' %>
             <p>Grand Prix Guyader <span class="info">en équipage</span></p>
             <p>Armen Race <span class="brand">en double</span></p>
             <p>Drheam Cup <span class="focus">en solitaire</span></p>

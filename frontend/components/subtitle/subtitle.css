@@ -8,4 +8,10 @@
     text-transform: uppercase;
     margin-top: 0;
   }
+
+  &.secondary {
+    h3 {
+      color: var(--secondary);
+    }
+  }
 }
