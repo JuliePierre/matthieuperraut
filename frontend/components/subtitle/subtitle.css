@@ -9,6 +9,12 @@
     margin-top: 0;
   }
 
+  &.main {
+    h3 {
+      color: var(--main);
+    }
+  }
+
   &.secondary {
     h3 {
       color: var(--secondary);

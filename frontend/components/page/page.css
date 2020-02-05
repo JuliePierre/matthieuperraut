@@ -4,3 +4,37 @@
   width: 100vw;
   margin: 0 auto;
 }
+
+.gif-container {
+  position: relative;
+  top: 0;
+  height: 500px;
+
+  .gif-first-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  .gif-animation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+  }
+
+  &:hover {
+    .gif-first-image {
+      opacity: 0;
+    }
+
+    .gif-animation {
+      opacity: 1;
+    }
+  }
+}

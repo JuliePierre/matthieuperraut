@@ -1,0 +1,17 @@
+@import '../../init';
+
+.flex-box {
+  display: flex;
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.space-around {
+    justify-content: space-around;
+  }
+
+  &.flex-center {
+    align-items: center;
+  }
+}

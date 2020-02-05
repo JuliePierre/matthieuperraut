@@ -7,6 +7,10 @@
     align-items: center;
   }
 
+  &.baseline {
+    align-items: baseline;
+  }
+
   &.l--1fr {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -24,6 +28,11 @@
 
   &.l--4fr {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  &.l--6fr {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
   }
 
@@ -46,6 +55,7 @@
   }
 
   &.special-media {
+    align-items: initial;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
     grid-template-rows: 200px 200px 200px;

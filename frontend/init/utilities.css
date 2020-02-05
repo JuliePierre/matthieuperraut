@@ -27,15 +27,27 @@
   color: var(--main);
 }
 
-.underlined--red {
+h4.underlined--red {
   display: inline-flex;
   background-color: var(--secondary);
 }
 
-.underlined--yellow {
+h4.underlined--yellow {
   display: inline-flex;
   background-color: var(--yellow);
   color: var(--main);
+}
+
+h4.underlined--blue {
+  display: inline-flex;
+  background-color: var(--main);
+  color: var(--white);
+}
+
+span.underlined--blue {
+  display: inline-flex;
+  background-color: var(--main);
+  color: var(--white);
 }
 
 .italic {

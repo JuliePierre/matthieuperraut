@@ -89,6 +89,9 @@
         <div class="center">
           <%= c 'title', title: "\"Le Rhum est un rève de marin\"", _custom_class: 'center yellow' %>
         </div>
+        <div class="center">
+          <%= c 'button', text: 'Voir le site de la Route du Rhum', path: 'https://www.routedurhum.com/fr', _target: '_blank', _custom_class: 'light' %>
+        </div>
       </div>
     <% end %>
   <% end %>
@@ -127,31 +130,62 @@
     <% end %>
   <% end %>
 
-  <%= c 'section', _background_image: 'matthieu-perraut-mini-transat.jpg', _custom_class: 'blue' do %>
-    <%= c 'grid', layout: 'l--3fr' do %>
-      <div class="center">
-        <h2>LOGO 1</h2>
-      </div>
-      <div class="center">
-        <h2>LOGO 2</h2>
-      </div>
-      <div class="center">
-        <h2>LOGO 3</h2>
-      </div>
+  <%= c 'section', _background_image: 'mer-course-au-large.png', _custom_class: 'small-padding' do %>
+    <%= c 'container' do %>
+      <%= c 'title', title: 'La Route du Rhum 2018 en chiffres', _custom_class: 'main' %>
+    <% end %>
+    <%= c 'space', height: '2rem' %>
+    <%= c 'grid', layout: 'l--6fr' do %>
+      <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+        <%= c 'content-box', number: '2,5M', text: 'de spectateurs' %>
+      <% end %>
+      <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+        <%= c 'content-box', number: '200 000', text: 'visiteurs au départ' %>
+      <% end %>
+      <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+        <%= c 'content-box', number: '12 000m2', text: 'de village' %>
+      <% end %>
+      <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+        <%= c 'content-box', number: '18 000', text: 'embarqués au départ' %>
+      <% end %>
+      <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+        <%= c 'content-box', number: '1 000', text: 'journalistes' %>
+      <% end %>
+      <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+        <%= c 'content-box', number: '124', text: 'bateaux au départ' %>
+      <% end %>
     <% end %>
   <% end %>
 
   <%= c 'section', _custom_class: 'bg-main no-padding', _id: 'bateau' do %>
     <%= c 'container' do %>
       <%= c 'card', _custom_class: 'large' do %>
-        <%= c 'title', title: 'Le bateau' %>
-        <%= c 'title', title: 'Plus vite, plus haut, plus fort' %>
+        <%= c 'title', title: 'Le bateau', _custom_class: 'yellow' %>
+        <%= c 'subtitle', subtitle: 'Plus vite, plus haut, plus fort', _custom_class: 'main' %>
         <div class="card__intro">
           <p> Un bateau plus grand et doté de technologies plus poussées. Le Class40 est équipé d’un système de navigation avec cartographie intégrée ainsi que d’un ordinateur de bord pour recevoir la météo et ajuster la stratégie en fonction des derniers modèles météo. L’objectif de ce projet est de naviguer de façon performante en utilisant toutes les dernières technologies. Par ailleurs, les Class40 sont des bateaux monotypes, comme les Minis de série, ce qui promet de belles bagares sur l’eau !</p>
-        </div>
-        <div>
-          <h2>INSÉRER ICI LES PNG DES BATEAUX</h2>
           <h2 class="center italic focus">Les Class 40 sont de gros minis !</h2>
+          <p>Le Class40 est le bon compromis pour un bateau de course capable de faire le tour du monde à grande vitesse mais aussi d’emmener naviguer ses partenaires, le tout à coût modéré.</p>
+          <p>L’objectif de ce projet est de naviguer sur un bateau récent et performant afin de <span class="white underlined--blue">viser les meilleures places possibles</span></p>
+        </div>
+        <%= c 'grid', layout: 'l--2fr baseline' do %>
+          <div>
+            <%= image_tag asset_pack_path('media/shared/static/rhino-mini.png'), height: '500px' %>
+          </div>
+          <div class="gif-container">
+            <%= image_tag asset_pack_path('media/shared/static/class.png'), height: '500px', class: 'gif-first-image' %>
+            <%= image_tag asset_pack_path('media/shared/static/sponsored-class40.gif'), height: '500px', class: 'gif-animation' %>
+          </div>
+        <% end %>
+        <%= c 'grid', layout: 'l--2fr' do %>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+        <% end %>
+        <div>
           <%= c 'button', text: 'Voir le site de la Class 40', path: 'https://www.class40.com/fr/index/', _target: '_blank' %>
         </div>
       <% end %>
