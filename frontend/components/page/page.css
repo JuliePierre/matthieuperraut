@@ -38,3 +38,12 @@
     }
   }
 }
+
+#partenaires {
+  .media {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 120px;
+  }
+}

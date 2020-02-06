@@ -261,14 +261,26 @@
         <div class="media five" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-coucher-soleil.jpg') %>')"></div>
         <div class="media six" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-prologue.jpg') %>')"></div>
       <% end %>
-      <%= c 'button', text: "Visiter la médiathèque", path: mediatheque_path, _custom_class: 'light' %>
+      <%= c 'button', text: "Voir plus de photos & vidéos", path: mediatheque_path %>
     <% end %>
   <% end %>
 
-  <%= c 'section', _id: 'partenaires' do %>
+  <%= c 'section', _id: 'partenaires', _custom_class: "no-padding" do %>
     <%= c 'container' do %>
-      <%= c 'title', title: 'Ils me font confiance' %>
-      <h2>Insérer ici les logos des partenaires</h2>
+      <%= c 'title', title: "Ils m'accompagnent !", _custom_class: 'main' %>
+      <%= c 'space', height: '4rem' %>
+      <%= c 'grid', layout: 'l--3fr' do %>
+        <div class="media" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-helly-hansen.png') %>')"></div>
+        <div class="media" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-atelier-lemee.svg') %>')"></div>
+        <div class="media" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-wichard.svg') %>')"></div>
+      <% end %>
+      <%= c 'space', height: '4rem' %>
+      <%= c 'grid', layout: 'l--3fr' do %>
+        <div class="media" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-profurl.jpg') %>')"></div>
+        <div class="media" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-eole.svg') %>')"></div>
+        <div class="media" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-naoned.svg') %>')"></div>
+      <% end %>
     <% end %>
+    <%= c 'space', height: '5rem' %>
   <% end %>
 <% end %>

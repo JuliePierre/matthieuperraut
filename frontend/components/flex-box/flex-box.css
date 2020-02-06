@@ -11,6 +11,10 @@
     justify-content: space-around;
   }
 
+  &.space-between {
+    justify-content: space-between;
+  }
+
   &.flex-center {
     align-items: center;
   }

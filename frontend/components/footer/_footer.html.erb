@@ -1,0 +1,32 @@
+<div class="footer">
+  <%= c 'container' do %>
+    <%= c 'grid', layout: 'l--3fr' do %>
+      <div>
+        <h4>Contact</h4>
+        <p>Pour toute demande, n'hésitez pas à me contacter :</p>
+        <p>MATTHIEU.PERRAUT@GMAIL.COM</p>
+        <p>+33 6 12 14 56 86</p>
+      </div>
+      <div class="center socials">
+        <h4>Suivez mes aventures !</h4>
+        <div>
+          <a href="https://www.facebook.com/Mini825MatthieuPerraut/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mini825matthieuperraut/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCEEJQFZkCj3WjPYHD_qcDPA/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://fr.linkedin.com/in/matthieu-perraut-771048129" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Nouveau défi !</h4>
+        <%= c 'flex-box', _custom_class: 'space-between flex-center' do %>
+          <div><%= image_tag asset_pack_path('media/shared/static/logo-class40.png') %></div>
+          <div><%= image_tag asset_pack_path('media/shared/static/logo-route-du-rhum.svg') %></div>
+        <% end %>
+        </div>
+      </div>
+    <% end %>
+    <div class="center">
+      <p><i class="fas fa-copyright"></i> Copyright - Julie Pierre - Objectif Route du Rhum 2022 Matthieu Perraut</p>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,42 @@
+@import '../../init';
+
+.footer {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--main);
+  color: var(--white);
+  padding: 5rem 0;
+
+  h4 {
+    display: block;
+    padding: 0;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1em;
+  }
+
+  .socials {
+    i {
+      font-size: 1.5rem;
+      margin-right: 1em;
+      color: var(--white);
+      line-height: 2em;
+      opacity: 1;
+
+      &:hover {
+        color: var(--secondary);
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .flex-box > div {
+    flex: 0 0 35%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
