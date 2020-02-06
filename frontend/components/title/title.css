@@ -41,6 +41,13 @@
     }
   }
 
+  &.secondary-yellow-text {
+    h2 {
+      color: var(--yellow);
+      background-color: var(--main);
+    }
+  }
+
   &.yellow {
     h2 {
       color: var(--main);

@@ -28,20 +28,37 @@
 }
 
 h4.underlined--red {
+  padding: 0.4em 0.4em 0.2em;
   display: inline-flex;
   background-color: var(--secondary);
 }
 
 h4.underlined--yellow {
+  padding: 0.4em 0.4em 0.2em;
   display: inline-flex;
   background-color: var(--yellow);
   color: var(--main);
 }
 
 h4.underlined--blue {
+  padding: 0.4em 0.4em 0.2em;
   display: inline-flex;
   background-color: var(--main);
   color: var(--white);
+}
+
+h4.underlined--blue-and-yellow {
+  padding: 0.4em 0.4em 0.2em;
+  display: inline-flex;
+  background-color: var(--main);
+  color: var(--yellow);
+}
+
+h4.underlined--white {
+  padding: 0.4em 0.4em 0.2em;
+  display: inline-flex;
+  background-color: var(--white);
+  color: var(--main);
 }
 
 span.underlined--blue {
