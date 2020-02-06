@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <%= c 'navbar' %>
+    <%= c 'navbar', page: params[:action]  %>
     <%= yield %>
     <%= javascript_pack_tag 'application' %>
     <%= c 'footer' %>

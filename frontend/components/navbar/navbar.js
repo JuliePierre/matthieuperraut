@@ -8,7 +8,7 @@ const clearMenu = (links) => {
 
 export const manageNavbar = () => {
   const banner = document.querySelector('.js-hero')
-  const navbarContainer = document.querySelector('.js-navbar-container')
+  const navbarContainer = document.querySelector('.navbar-container-home.js-navbar-container')
   const links = Array.from(document.querySelectorAll('.js-navbar__link'))
   const sections = Array.from(document.querySelectorAll('.js-section'))
 

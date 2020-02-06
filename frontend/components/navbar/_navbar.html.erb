@@ -1,15 +1,15 @@
-<div class="navbar-container navbar-container--transparent js-navbar-container" >
+<div class="navbar-container-<%= page %> navbar-container js-navbar-container <%= "navbar-container--transparent" if page == 'home' %>" >
   <div class="navbar js-navbar">
     <div class="navbar__brand">
       <div>Matthieu Perraut</div>
     </div>
     <div class="navbar__menu">
-      <%= link_to "Accueil", root_path, class: 'navbar__link js-navbar__link active', 'data-target': 'accueil' %>
+      <%= link_to "Accueil", root_path, class: "navbar__link js-navbar__link #{'active' if page == 'home'}", 'data-target': 'accueil' %>
       <%= link_to "La Mini Transat", root_path(anchor: 'mini-transat'), class: 'navbar__link js-navbar__link', 'data-target': 'mini-transat' %>
       <%= link_to "L'objectif", root_path(anchor: 'objectif'), class: 'navbar__link js-navbar__link', 'data-target': 'objectif' %>
       <%= link_to "Le bateau", root_path(anchor: 'bateau'), class: 'navbar__link js-navbar__link', 'data-target': 'bateau' %>
       <%= link_to "Le skipper", root_path(anchor: 'skipper'), class: 'navbar__link js-navbar__link', 'data-target': 'skipper' %>
-      <%= link_to "La médiathèque", root_path(anchor: 'mediatheque'), class: 'navbar__link js-navbar__link', 'data-target': 'mediatheque' %>
+      <%= link_to "La médiathèque", root_path(anchor: 'mediatheque'), class: "navbar__link js-navbar__link #{'active' if page == 'mediatheque'}", 'data-target': 'mediatheque' %>
       <%= link_to "Les partenaires", root_path(anchor: 'partenaires'), class: 'navbar__link js-navbar__link', 'data-target': 'partenaires' %>
     </div>
   </div>

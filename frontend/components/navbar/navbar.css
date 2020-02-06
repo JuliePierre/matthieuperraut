@@ -8,6 +8,7 @@
   width: 100%;
   z-index: 100;
   transition: background 0.3s ease-in-out;
+  background: var(--main);
 
   .navbar {
     display: flex;
@@ -19,6 +20,7 @@
 
     &__brand {
       font-size: 1.5rem;
+      color: var(--white);
     }
 
     &__menu {
@@ -26,12 +28,15 @@
       display: flex;
       justify-content: space-between;
       font-weight: 600;
+      color: var(--white);
     }
 
     &__link {
       font-size: 0.8rem;
       text-transform: uppercase;
       transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+      color: var(--white);
+      opacity: 1;
     }
   }
 
@@ -72,6 +77,13 @@
           opacity: 1;
         }
       }
+    }
+  }
+
+  &-mediatheque {
+    .navbar__link.active {
+      color: var(--secondary);
+      opacity: 1;
     }
   }
 

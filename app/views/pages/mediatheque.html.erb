@@ -1,0 +1,77 @@
+<%= c 'page', page: "mediatheque" do %>
+  <%= c 'section' do %>
+    <%= c 'container' do %>
+      <%= c 'title', title: 'Saison Mini 2019', _custom_class: 'main' %>
+      <%= c 'title', title: 'En Vidéos', _custom_class: 'yellow' %>
+      <%= c 'space', height: '4rem' %>
+      <%= c 'container', _custom_class: 'small-and-centered' do %>
+        <%= c 'video-wrapper' do %>
+          <iframe width="560" height="349" src="https://www.youtube.com/embed/AFPQ7IpMDng" frameborder="0" allow="autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+        <% end %>
+      <% end %>
+      <%= c 'space', height: '4rem' %>
+      <div class="center">
+        <%= c 'subtitle', subtitle: 'La suite des vidéos de la Mini Transat très prochainement...', _custom_class: 'main' %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <%= c 'section', _custom_class: 'no-padding' do %>
+    <%= c 'container' do %>
+      <%= c 'title', title: 'En Photos', _custom_class: 'yellow' %>
+      <%= c 'space', height: '4rem' %>
+      <%= c 'grid', layout: 'special-media' do %>
+        <div class="media one" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-transat.jpg') %>')"></div>
+        <div class="media two" style="background-image: url('<%= asset_pack_path('media/shared/static/transgascogne-matthieu-perraut.jpg') %>')"></div>
+        <div class="media three" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-transat-2019.jpg') %>')"></div>
+        <div class="media four" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-wichard.jpg') %>')"></div>
+        <div class="media five" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-coucher-soleil.jpg') %>')"></div>
+        <div class="media six" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-prologue.jpg') %>')"></div>
+      <% end %>
+      <%= c 'button', text: "Phototèque de la Classe Mini", path: "https://www.minitransat.fr/mediatheque", _target: "_blank" %>
+    <% end %>
+  <% end %>
+
+  <%= c 'section' do %>
+    <%= c 'container' do %>
+      <%= c 'title', title: 'Saison Mini 2018', _custom_class: 'main' %>
+      <%= c 'title', title: 'En Vidéos', _custom_class: 'yellow' %>
+      <%= c 'space', height: '4rem' %>
+      <%= c 'container', _custom_class: 'small-and-centered' do %>
+        <%= c 'video-wrapper' do %>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/c-FB52hmSeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <% end %>
+        <%= c 'space', height: '5rem' %>
+        <%= c 'video-wrapper' do %>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/b8--JLBrtfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <% end %>
+        <%= c 'space', height: '5rem' %>
+        <%= c 'video-wrapper' do %>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CTrgwazRkbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <% end %>
+        <%= c 'space', height: '5rem' %>
+        <%= c 'video-wrapper' do %>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/lidfo3odqlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <% end %>
+      <% end %>
+      <%= c 'button', text: "Visiter ma chaine Youtube", path: "https://www.youtube.com/channel/UCEEJQFZkCj3WjPYHD_qcDPA/videos", _target: "_blank" %>
+    <% end %>
+  <% end %>
+
+  <%= c 'section' do %>
+    <%= c 'container' do %>
+      <%= c 'title', title: 'Saison Mini 2018', _custom_class: 'main' %>
+      <%= c 'title', title: 'En Photos', _custom_class: 'yellow' %>
+      <%= c 'space', height: '4rem' %>
+      <%= c 'grid', layout: 'special-media' do %>
+        <div class="media one" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-transat.jpg') %>')"></div>
+        <div class="media two" style="background-image: url('<%= asset_pack_path('media/shared/static/transgascogne-matthieu-perraut.jpg') %>')"></div>
+        <div class="media three" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-transat-2019.jpg') %>')"></div>
+        <div class="media four" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-wichard.jpg') %>')"></div>
+        <div class="media five" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-coucher-soleil.jpg') %>')"></div>
+        <div class="media six" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-prologue.jpg') %>')"></div>
+      <% end %>
+      <%= c 'button', text: "Voir plus de photos & vidéos", path: mediatheque_path %>
+    <% end %>
+  <% end %>
+<% end %>
