@@ -27,6 +27,12 @@ import 'shared/static/mer-course-au-large.png'
 import 'shared/static/rhino-mini.png'
 import 'shared/static/class.png'
 import 'shared/static/sponsored-class40.gif'
+import 'shared/static/matthieu-perraut-skipper.png'
+import 'shared/static/rhino-mini-transat.jpg'
+import 'shared/static/rhino-mini-transat-2019.jpg'
+import 'shared/static/rhino-wichard.jpg'
+import 'shared/static/rhino-coucher-soleil.jpg'
+import 'shared/static/rhino-mini-prologue.jpg'
 
 // ICONS
 import '@fortawesome/fontawesome-free/css/all.css'

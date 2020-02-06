@@ -22,7 +22,7 @@
     }
 
     &__menu {
-      width: 50%;
+      width: 60%;
       display: flex;
       justify-content: space-between;
       font-weight: 600;

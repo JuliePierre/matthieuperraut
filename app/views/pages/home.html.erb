@@ -22,7 +22,7 @@
   <%= c 'section', _id: 'mini-transat' do %>
     <%= c 'container' do %>
       <%= c 'grid', layout: 'l--2fr' do %>
-        <%= c 'feature-box', with_background: true, _background_image: 'skipper-matthieu-perraut.png' do %>
+        <%= c 'feature-box', with_background: true, _background_image: 'skipper-matthieu-perraut.png', _custom_class: 'with-shadow' do %>
           <%= c 'title', title: 'Mon projet Mini Transat', _custom_class: 'main' %>
           <div class="center">
             <h4 class="white underlined--red">Un objectif personnel atteint :</h4><h4 class="white"> Etre au départ de la Mini Transat 2019</h4>
@@ -192,16 +192,74 @@
     <% end %>
   <% end %>
 
-  <%= c 'section', _custom_class: 'bg-main', _id: 'mediatheque' do %>
+  <%= c 'section', _custom_class: 'bg-main', _id: 'skipper' do %>
     <%= c 'container' do %>
-      <%= c 'title', title: 'Mon parcours en images' %>
+      <%= c 'grid', layout: 'l--2fr' do %>
+        <div class="white">
+          <%= c 'title', title: 'Le skipper', _custom_class: 'yellow' %>
+          <%= c 'subtitle', subtitle: 'Matthieu Perraut' %>
+          <p>30 ans, architecte, entrepreneur et navigateur passionné</p>
+          <p>Architecte de formation, Matthieu a grandi en Bretagne où il a développé un amour de la mer et découvert les joies de la navigation.</p>
+          <p>Il débute sa carrière professionnelle dans une agence d’architecture renommée à Paris avant de tout quitter en 2017 pour s’installer à Pornichet et réaliser son rêve de course au large en préparant la Mini Transat 2019.</p>
+          <p>Il participe donc à l’édition 2019 de cette course mythique, en solitaire et sans assistance, à bord d’un bateau de 6,50m, et traverse l’Atlantique en novembre 2019.</p>
+          <p>Sa détermination et son engagement le portent pendant 3 ans dans la préparation de la course et dans l’atteinte de son objectif : arriver 5ème bateau de sa génération, en maîtrisant parfaitement son budget.</p>
+          <p>Prochaine étape : se dédier à sa passion et participer à la Route du Rhum en 2022 à bord d’un Class40.</p>
+          <div class="right">
+            <h4 class="white underlined--red">"Embarquez avec moi !"</h4>
+          </div>
+        </div>
+        <%= c 'feature-box', with_background: true, _background_image: 'matthieu-perraut-skipper.png', _linear_gradient: '360deg, rgba(12,33,48,1), rgba(12,33,48,0.25) 100%', _custom_class: 'flex-end' do %>
+          <div>
+            <%= c 'title', title: 'Palmarès', _custom_class: 'yellow with-shadow' %>
+            <%= c 'space', height: '2rem' %>
+            <h4>2019</h4>
+            <%= c 'grid', layout: 'l--2fr' do %>
+              <div>
+                <p class="no-margin">- Mini Transat 2019</p>
+                <p class="no-margin">- Transgascogne</p>
+                <p class="no-margin">- Pornichet Select</p>
+              </div>
+              <div>
+                <p class="no-margin">25 / 65</p>
+                <p class="no-margin">17 / 48</p>
+                <p class="no-margin">25 / 60</p>
+              </div>
+            <% end %>
+            <%= c 'space', height: '2rem' %>
+            <h4>2018</h4>
+            <%= c 'grid', layout: 'l--2fr' do %>
+              <div>
+                <p class="no-margin">- Les Sables - Les Açores</p>
+                <p class="no-margin">- Mini Fastnet</p>
+                <p class="no-margin">- Mini en Mai</p>
+                <p class="no-margin">- Pornichet Select</p>
+                <p class="no-margin">- Lorient PLM</p>
+              </div>
+              <div>
+                <p class="no-margin">19 / 38</p>
+                <p class="no-margin">19 / 51</p>
+                <p class="no-margin">22 / 48</p>
+                <p class="no-margin">22 / 60</p>
+                <p class="no-margin">19 / 41</p>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= c 'section', _id: 'mediatheque' do %>
+    <%= c 'container' do %>
+      <%= c 'title', title: 'Mon parcours en images', _custom_class: 'secondary' %>
+      <%= c 'space', height: '4rem' %>
       <%= c 'grid', layout: 'special-media' do %>
-        <div class="one" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
-        <div class="two" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
-        <div class="three" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
-        <div class="four" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
-        <div class="five" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')"></div>
-        <div class="six" style="background-image: url('<%= asset_pack_path('media/shared/static/matthieu-perraut-mini-transat.jpg') %>')">Six</div>
+        <div class="media one" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-transat.jpg') %>')"></div>
+        <div class="media two" style="background-image: url('<%= asset_pack_path('media/shared/static/transgascogne-matthieu-perraut.jpg') %>')"></div>
+        <div class="media three" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-transat-2019.jpg') %>')"></div>
+        <div class="media four" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-wichard.jpg') %>')"></div>
+        <div class="media five" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-coucher-soleil.jpg') %>')"></div>
+        <div class="media six" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-prologue.jpg') %>')"></div>
       <% end %>
       <%= c 'button', text: "Visiter la médiathèque", path: mediatheque_path, _custom_class: 'light' %>
     <% end %>

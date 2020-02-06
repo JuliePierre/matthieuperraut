@@ -60,6 +60,12 @@
     grid-gap: 1rem;
     grid-template-rows: 200px 200px 200px;
 
+    .media {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
     .one {
       grid-column: 1 / 3;
       grid-row: 1;
@@ -88,6 +94,7 @@
     .six {
       grid-column: 4;
       grid-row: 3;
+      background-position: bottom center;
     }
   }
 

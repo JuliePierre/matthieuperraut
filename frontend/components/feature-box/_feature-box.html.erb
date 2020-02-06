@@ -1,3 +1,3 @@
-<div class="feature-box <%= with_background ? 'with-background' : '' %> <%= defined?(_custom_class) ? _custom_class : '' %>" style='<%= with_background ? "background-image: url('#{asset_pack_path("media/shared/static/#{_background_image}")}')" : "" %>'>
+<div class="feature-box <%= with_background ? 'with-background' : '' %> <%= defined?(_custom_class) ? _custom_class : '' %>" style='<%= with_background ? "background-image: #{defined?(_linear_gradient) ? "linear-gradient(#{_linear_gradient})," : ""} url('#{asset_pack_path("media/shared/static/#{_background_image}")}')" : "" %>'>
   <%= yield %>
 </div>
