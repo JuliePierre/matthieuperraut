@@ -25,3 +25,19 @@
     line-height: 0.8em;
   }
 }
+
+@media (--screen-sm) {
+  .content-box {
+    width: 5rem;
+    height: 5rem;
+    max-width: 100%;
+
+    h4 {
+      font-size: 0.8rem;
+    }
+
+    p {
+      font-size: 0.6rem;
+    }
+  }
+}

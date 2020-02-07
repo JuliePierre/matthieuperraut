@@ -12,6 +12,7 @@ import 'components/footer/footer'
 import 'components/grid/grid'
 import 'components/hero/hero'
 import 'components/icon-box/icon-box'
+import 'components/media/media'
 import 'components/section/section'
 import 'components/space/space'
 import 'components/subtitle/subtitle'
@@ -49,5 +50,4 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 // JAVASCRIPT
 import { manageNavbar } from 'components/navbar/navbar'
-
 manageNavbar()

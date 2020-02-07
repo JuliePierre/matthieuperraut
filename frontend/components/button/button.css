@@ -48,3 +48,10 @@
   background-color: var(--white);
   color: var(--main);
 }
+
+@media (--screen-sm) {
+  .btn {
+    padding: 0.8em 1.4em;
+    font-size: 0.8rem;
+  }
+}

@@ -33,3 +33,12 @@
     }
   }
 }
+
+@media (--screen-sm) {
+  .page-home {
+    .video-wrapper {
+      padding-bottom: 100%;
+      padding-top: 25%;
+    }
+  }
+}

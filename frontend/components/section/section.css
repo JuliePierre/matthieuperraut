@@ -19,3 +19,13 @@ section {
     padding: 0;
   }
 }
+
+@media (--screen-sm) {
+  section {
+    padding: 2rem 0;
+
+    &.full-height {
+      height: auto;
+    }
+  }
+}

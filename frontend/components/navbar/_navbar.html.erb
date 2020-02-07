@@ -3,7 +3,7 @@
     <div class="navbar__brand">
       <div>Matthieu Perraut</div>
     </div>
-    <div class="navbar__menu">
+    <div class="navbar__menu hidden-on-mobile">
       <%= link_to "Accueil", root_path, class: "navbar__link js-navbar__link #{'active' if page == 'home'}", 'data-target': 'accueil' %>
       <%= link_to "La Mini Transat", root_path(anchor: 'mini-transat'), class: 'navbar__link js-navbar__link', 'data-target': 'mini-transat' %>
       <%= link_to "L'objectif", root_path(anchor: 'objectif'), class: 'navbar__link js-navbar__link', 'data-target': 'objectif' %>

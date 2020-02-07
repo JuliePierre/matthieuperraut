@@ -88,3 +88,16 @@ span.underlined--blue {
 p.no-margin {
   margin: 0;
 }
+
+/* DEVICES UTILITIES */
+.hidden-on-mobile {
+  @media (--screen-sm) {
+    display: none !important;
+  }
+}
+
+.padding-on-mobile {
+  @media (--screen-sm) {
+    padding: 0 2rem;
+  }
+}

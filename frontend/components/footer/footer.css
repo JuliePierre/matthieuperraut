@@ -17,6 +17,8 @@
   }
 
   .socials {
+    text-align: center;
+
     i {
       font-size: 1.5rem;
       margin-right: 1em;
@@ -31,12 +33,42 @@
     }
   }
 
+  .copyright {
+    text-align: center;
+  }
+
   .flex-box > div {
     flex: 0 0 35%;
 
     img {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+@media (--screen-sm) {
+  .footer {
+    padding: 3rem 0;
+
+    h4 {
+      font-size: 0.8rem;
+    }
+
+    p {
+      font-size: 0.6rem;
+    }
+
+    .socials {
+      text-align: initial;
+
+      i {
+        font-size: 1rem;
+      }
+    }
+
+    .copyright {
+      padding: 0 2rem;
     }
   }
 }

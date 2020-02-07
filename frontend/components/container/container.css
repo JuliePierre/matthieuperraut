@@ -19,3 +19,21 @@
     text-align: center;
   }
 }
+
+@media (--screen-sm) {
+  .container {
+    &.very-small {
+      width: 90vw;
+    }
+
+    &.small-and-centered {
+      width: 80vw;
+      text-align: center;
+    }
+
+    &.very-small-and-centered {
+      width: 80vw;
+      text-align: center;
+    }
+  }
+}

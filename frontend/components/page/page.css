@@ -39,6 +39,30 @@
   }
 }
 
+@media (--screen-sm) {
+  .gif-container {
+    height: 200px;
+
+    .gif-first-image {
+      opacity: 0;
+    }
+
+    .gif-animation {
+      opacity: 1;
+    }
+
+    &:hover {
+      .gif-first-image {
+        opacity: 1 !important;
+      }
+
+      .gif-animation {
+        opacity: 0;
+      }
+    }
+  }
+}
+
 #partenaires {
   .media {
     background-size: contain;
@@ -61,6 +85,14 @@
         right: 0;
         left: 0;
       }
+    }
+  }
+}
+
+@media (--screen-sm) {
+  #partenaires {
+    .media {
+      height: 50px;
     }
   }
 }

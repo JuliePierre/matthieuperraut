@@ -1,0 +1,31 @@
+@import '../../init';
+
+.media {
+  &.height-related {
+    img {
+      height: 500px;
+    }
+  }
+
+  &.width-related {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (--screen-sm) {
+  .media {
+    &.height-related.half-on-mobile {
+      img {
+        height: 200px;
+      }
+    }
+
+    &.width-related.smaller-on-mobile {
+      img {
+        width: 80%;
+      }
+    }
+  }
+}

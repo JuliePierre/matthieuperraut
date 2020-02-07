@@ -41,23 +41,12 @@
   &__button .btn {
     color: var(--secondary);
   }
-
-  /* @media (--screen-sm) {
-    height: 70vh;
-    justify-content: space-around;
-  } */
 }
 
-/* MOBILE */
-
-/* &--mobile {
-  padding: 0;
-  height: calc(100vh - 5rem);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: 0;
-  width: 100vw;
-  overflow: scroll;
-} */
+@media (--screen-sm) {
+  .hero {
+    &__content {
+      width: 90vw;
+    }
+  }
+}

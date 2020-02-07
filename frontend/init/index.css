@@ -4,6 +4,13 @@
 @import "icons.css";
 @import "utilities.css";
 
+/* Media queries */
+@custom-media --screen-xs (max-width: 440px);
+@custom-media --screen-sm (max-width: 768px);
+@custom-media --screen-md (max-width: 1200px);
+@custom-media --screen-lg (max-width: 1400px);
+@custom-media --screen-xl (max-width: 1600px);
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +28,14 @@ body {
   color: var(--main);
   position: relative;
   background-color: var(--white);
+}
+
+@media (--screen-sm) {
+  body {
+    font-size: 13px;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+  }
 }
 
 a {
@@ -57,4 +72,11 @@ h4 {
   line-height: 0.6em;
   padding: 0.2em 0.4em 0;
   margin: 0 0 1em 0;
+}
+
+@media (--screen-sm) {
+  h4 {
+    font-size: 1rem;
+    line-height: 0.8em;
+  }
 }

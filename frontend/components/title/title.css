@@ -69,3 +69,18 @@
     }
   }
 }
+
+@media (--screen-sm) {
+  .title {
+    h2 {
+      font-size: 1.4rem;
+      line-height: 0.8em;
+    }
+
+    &.large {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

@@ -1,1 +1,27 @@
 @import '../../init';
+
+.space--l5rem {
+  height: 5rem;
+}
+
+.space--l4rem {
+  height: 4rem;
+}
+
+.space--l3rem {
+  height: 3rem;
+}
+
+.space--l2rem {
+  height: 2rem;
+}
+
+.space--l0rem {
+  height: 0;
+}
+
+@media (--screen-sm) {
+  .space--s2rem {
+    height: 2rem;
+  }
+}

@@ -18,3 +18,13 @@
     margin: auto;
   }
 }
+
+@media (--screen-sm) {
+  .card {
+    padding: 1rem;
+
+    &.large {
+      width: 100%;
+    }
+  }
+}

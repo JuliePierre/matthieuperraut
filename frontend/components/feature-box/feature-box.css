@@ -25,3 +25,11 @@
     box-shadow: 1px 1px 4px var(--main);
   }
 }
+
+@media (--screen-sm) {
+  .feature-box {
+    &.no-padding {
+      padding: 0;
+    }
+  }
+}
