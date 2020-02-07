@@ -1,6 +1,8 @@
 @import '../../init';
 
 .media {
+  text-align: center;
+
   &.height-related {
     img {
       height: 500px;

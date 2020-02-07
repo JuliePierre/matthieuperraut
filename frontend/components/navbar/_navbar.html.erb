@@ -3,7 +3,7 @@
     <div class="navbar__brand">
       <div>Matthieu Perraut</div>
     </div>
-    <div class="navbar__menu hidden-on-mobile">
+    <div class="navbar__menu hidden-on-tablet-and-mobile">
       <%= link_to "Accueil", root_path, class: "navbar__link js-navbar__link #{'active' if page == 'home'}", 'data-target': 'accueil' %>
       <%= link_to "La Mini Transat", root_path(anchor: 'mini-transat'), class: 'navbar__link js-navbar__link', 'data-target': 'mini-transat' %>
       <%= link_to "L'objectif", root_path(anchor: 'objectif'), class: 'navbar__link js-navbar__link', 'data-target': 'objectif' %>
@@ -12,14 +12,14 @@
       <%= link_to "La médiathèque", root_path(anchor: 'mediatheque'), class: "navbar__link js-navbar__link #{'active' if page == 'mediatheque'}", 'data-target': 'mediatheque' %>
       <%= link_to "Les partenaires", root_path(anchor: 'partenaires'), class: 'navbar__link js-navbar__link', 'data-target': 'partenaires' %>
     </div>
-    <div class="navbar__menu hidden-on-desktop">
+    <div class="navbar__menu hidden-on-desktop-only">
       <div class="js-sidebar-menu">
         <i class="fas fa-bars"></i>
       </div>
     </div>
   </div>
 </div>
-<div class="mobile-sidebar js-mobile-sidebar hidden-on-desktop">
+<div class="mobile-sidebar js-mobile-sidebar hidden-on-desktop-only">
   <div class="mobile-sidebar__close"><i class="far fa-times-circle js-close"></i></i></div>
   <div class="mobile-sidebar__menu">
     <%= link_to "Accueil", root_path, class: "navbar__link js-navbar__link #{'active' if page == 'home'}", 'data-target': 'accueil' %>

@@ -98,6 +98,32 @@
     }
   }
 
+  @media (--screen-md) {
+    &.m--1fr {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+    }
+
+    &.m--2fr {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+
+    &.m--3fr {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 2rem;
+    }
+
+    &.m--4fr {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 2rem;
+    }
+
+    &.no-gap {
+      grid-gap: 0;
+    }
+  }
+
   @media (--screen-sm) {
     &.s--1fr {
       grid-template-columns: 1fr;

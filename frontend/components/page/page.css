@@ -39,10 +39,8 @@
   }
 }
 
-@media (--screen-sm) {
+@media (--screen-md) {
   .gif-container {
-    height: 200px;
-
     .gif-first-image {
       opacity: 0;
     }
@@ -60,6 +58,12 @@
         opacity: 0;
       }
     }
+  }
+}
+
+@media (--screen-sm) {
+  .gif-container {
+    height: 200px;
   }
 }
 

@@ -30,6 +30,14 @@ body {
   background-color: var(--white);
 }
 
+@media (--screen-md) {
+  body {
+    font-size: 22px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+  }
+}
+
 @media (--screen-sm) {
   body {
     font-size: 13px;

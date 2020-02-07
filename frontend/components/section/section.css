@@ -20,12 +20,16 @@ section {
   }
 }
 
-@media (--screen-sm) {
+@media (--screen-md) {
   section {
-    padding: 2rem 0;
-
     &.full-height {
       height: auto;
     }
+  }
+}
+
+@media (--screen-sm) {
+  section {
+    padding: 2rem 0;
   }
 }

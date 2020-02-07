@@ -20,7 +20,7 @@
 
   <%= c 'section', _id: 'mini-transat' do %>
     <%= c 'container' do %>
-      <%= c 'grid', layout: 'l--2fr s--1fr' do %>
+      <%= c 'grid', layout: 'l--2fr m--1fr s--1fr' do %>
         <%= c 'feature-box', with_background: true, _background_image: 'skipper-matthieu-perraut.png', _custom_class: 'with-shadow' do %>
           <%= c 'title', title: 'Mon projet Mini Transat', _custom_class: 'main' %>
           <div class="center">
@@ -60,9 +60,9 @@
     <% end %>
     <%= c 'space', desktop_height: '5rem', mobile_height: '5rem' %>
     <%= c 'grid', layout: 'l--2fr s--1fr' do %>
-      <div class="center">
+      <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
         <%= c 'media', image: 'parcours-mini-transat-2019.png', _custom_class: 'width-related smaller-on-mobile' %>
-      </div>
+      <% end %>
       <div class="padding-on-mobile">
         <h4>Une préparation physique et psychologique intense</h4>
         <h4>Une volonté à toute épreuve</h4>
@@ -102,7 +102,7 @@
       <%= c 'card', _custom_class: 'large' do %>
         <%= c 'title', title: 'Trois ans de courses et de préparation', _custom_class: 'secondary-yellow-text' %>
         <%= c 'space', desktop_height: '4rem', mobile_height: '2rem' %>
-        <%= c 'grid', layout: 'l--3fr s--1fr' do %>
+        <%= c 'grid', layout: 'l--3fr m--3fr s--1fr' do %>
           <div>
             <%= c 'subtitle', subtitle: '2020', _custom_class: 'secondary' %>
             <p>Grand Prix Guyader <span class="info">en équipage</span></p>
@@ -188,7 +188,7 @@
 
   <%= c 'section', _custom_class: 'bg-main', _id: 'skipper' do %>
     <%= c 'container' do %>
-      <%= c 'grid', layout: 'l--2fr s--1fr' do %>
+      <%= c 'grid', layout: 'l--2fr m--1fr s--1fr' do %>
         <div class="white">
           <%= c 'title', title: 'Le skipper', _custom_class: 'yellow-white-text' %>
           <%= c 'subtitle', subtitle: 'Matthieu Perraut' %>

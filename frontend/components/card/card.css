@@ -19,12 +19,16 @@
   }
 }
 
-@media (--screen-sm) {
+@media (--screen-md) {
   .card {
-    padding: 1rem;
-
     &.large {
       width: 100%;
     }
+  }
+}
+
+@media (--screen-sm) {
+  .card {
+    padding: 1rem;
   }
 }

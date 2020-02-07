@@ -20,6 +20,18 @@
   }
 }
 
+@media (--screen-md) {
+  .container {
+    &.very-small {
+      width: 60vw;
+    }
+
+    &.very-small-and-centered {
+      width: 60vw;
+    }
+  }
+}
+
 @media (--screen-sm) {
   .container {
     &.very-small {

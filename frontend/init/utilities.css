@@ -96,12 +96,28 @@ p.no-margin {
   }
 }
 
-.hidden-on-desktop {
-  @media (--screen-xl) {
+.hidden-on-tablet-and-mobile {
+  @media (--screen-md) {
+    display: none !important;
+  }
+}
+
+.hidden-on-tablet-and-desktop {
+  @media (--screen-md) {
     display: none !important;
   }
 
   @media (--screen-sm) {
+    display: initial !important;
+  }
+}
+
+.hidden-on-desktop-only {
+  @media (--screen-xl) {
+    display: none !important;
+  }
+
+  @media (--screen-md) {
     display: initial !important;
   }
 }
