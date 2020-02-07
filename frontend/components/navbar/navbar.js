@@ -6,6 +6,30 @@ const clearMenu = (links) => {
   })
 }
 
+const manageMobileSidebar = () => {
+  const button = document.querySelector('.js-sidebar-menu')
+  const sidebar = document.querySelector('.js-mobile-sidebar')
+  const links = sidebar.querySelectorAll('.js-navbar__link')
+  if (button && sidebar) {
+    button.addEventListener('click', (event) => {
+      sidebar.classList.toggle('visible')
+    })
+
+    const closeButton = sidebar.querySelector('.js-close')
+    if (closeButton) {
+      closeButton.addEventListener('click', (event) => {
+        sidebar.classList.remove('visible')
+      })
+    }
+
+    Array.from(links).forEach((link) => {
+      link.addEventListener('click', (event) => {
+        sidebar.classList.remove('visible')
+      })
+    })
+  }
+}
+
 export const manageNavbar = () => {
   const banner = document.querySelector('.js-hero')
   const navbarContainer = document.querySelector('.navbar-container-home.js-navbar-container')
@@ -28,11 +52,9 @@ export const manageNavbar = () => {
       if (section.getBoundingClientRect().top > 0 && section.getBoundingClientRect().top <= 200) {
         // ACTIVE SECTION
         if (section.classList.contains('active')) {
-          console.log('do nothing')
         } else {
           const target = section.id
           if (target) {
-            console.log(target)
             const link = document.querySelector(`.js-navbar__link[data-target=${target}]`)
             clearMenu(links)
             if (link) {
@@ -43,4 +65,6 @@ export const manageNavbar = () => {
       }
     })
   })
+
+  manageMobileSidebar()
 }
