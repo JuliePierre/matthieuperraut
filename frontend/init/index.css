@@ -10,6 +10,7 @@
 @custom-media --screen-md (max-width: 1200px);
 @custom-media --screen-lg (max-width: 1400px);
 @custom-media --screen-xl (max-width: 1600px);
+@custom-media --screen-xxl (max-width: 4000px);
 
 html {
   scroll-behavior: smooth;
@@ -19,15 +20,24 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'EB Garamond', serif;
-  font-size: 16px;
-  line-height: 1.5em;
-  letter-spacing: 1px;
-  font-weight: 400;
-  color: var(--main);
-  position: relative;
-  background-color: var(--white);
+@media (--screen-xxl) {
+  body {
+    font-family: 'EB Garamond', serif;
+    font-size: 28px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--main);
+    position: relative;
+    background-color: var(--white);
+  }
+}
+
+@media (--screen-xl) {
+  body {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
 }
 
 @media (--screen-md) {

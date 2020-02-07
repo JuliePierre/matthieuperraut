@@ -113,7 +113,7 @@ p.no-margin {
 }
 
 .hidden-on-desktop-only {
-  @media (--screen-xl) {
+  @media (--screen-xxl) {
     display: none !important;
   }
 
