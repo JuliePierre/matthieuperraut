@@ -96,6 +96,16 @@ p.no-margin {
   }
 }
 
+.hidden-on-desktop {
+  @media (--screen-xl) {
+    display: none !important;
+  }
+
+  @media (--screen-sm) {
+    display: initial !important;
+  }
+}
+
 .padding-on-mobile {
   @media (--screen-sm) {
     padding: 0 2rem;
