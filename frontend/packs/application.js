@@ -42,6 +42,7 @@ import 'shared/static/logo-naoned.svg'
 import 'shared/static/logo-eole.svg'
 import 'shared/static/logo-class40.png'
 import 'shared/static/logo-route-du-rhum.svg'
+import 'shared/static/favicon.png'
 
 // ICONS
 import '@fortawesome/fontawesome-free/css/all.css'
