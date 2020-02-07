@@ -56,6 +56,13 @@ h1 {
   font-weight: 300;
 }
 
+@media (--screen-sm) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1em;
+  }
+}
+
 h2 {
   font-size: 1.75rem;
 }

@@ -21,3 +21,11 @@
     }
   }
 }
+
+@media (--screen-sm) {
+  .subtitle {
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}

@@ -41,4 +41,16 @@
       padding-top: 25%;
     }
   }
+
+  .page-mediatheque {
+    .video-wrapper {
+      padding-bottom: 100%;
+      padding-top: 25%;
+    }
+
+    .minute-rhino .video-wrapper {
+      padding-bottom: 35%;
+      padding-top: 25%;
+    }
+  }
 }

@@ -24,4 +24,12 @@
   .space--s2rem {
     height: 2rem;
   }
+
+  .space--s3rem {
+    height: 3rem;
+  }
+
+  .space--s4rem {
+    height: 4rem;
+  }
 }
