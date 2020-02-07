@@ -10,7 +10,7 @@
 @custom-media --screen-md (max-width: 1200px);
 @custom-media --screen-lg (max-width: 1400px);
 @custom-media --screen-xl (max-width: 1600px);
-@custom-media --screen-xxl (max-width: 4000px);
+@custom-media --screen-xxl (max-width: 2880px);
 
 html {
   scroll-behavior: smooth;
