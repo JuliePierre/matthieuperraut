@@ -20,6 +20,12 @@
   height: 0;
 }
 
+@media (--screen-md) {
+  .space--m3rem {
+    height: 3rem;
+  }
+}
+
 @media (--screen-sm) {
   .space--s2rem {
     height: 2rem;
