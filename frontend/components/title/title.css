@@ -34,6 +34,13 @@
     }
   }
 
+  &.main-blue-text {
+    h2 {
+      color: var(--main);
+      background-color: var(--secondary);
+    }
+  }
+
   &.secondary {
     h2 {
       color: var(--white);
@@ -51,6 +58,13 @@
   &.yellow {
     h2 {
       color: var(--main);
+      background-color: var(--yellow);
+    }
+  }
+
+  &.yellow-white-text {
+    h2 {
+      color: var(--white);
       background-color: var(--yellow);
     }
   }
