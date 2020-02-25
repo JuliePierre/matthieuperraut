@@ -17,6 +17,10 @@
     width: 75vw;
     margin: auto;
   }
+
+  &.no-padding {
+    padding: 0;
+  }
 }
 
 @media (--screen-md) {
