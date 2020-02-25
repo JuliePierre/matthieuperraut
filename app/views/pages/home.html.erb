@@ -167,13 +167,17 @@
         <%= c 'container', _custom_class: "small-and-centered" do %>
           <p> Un bateau plus grand et doté de technologies plus poussées. Le Class40 est équipé d’un système de navigation avec cartographie intégrée ainsi que d’un ordinateur de bord pour recevoir la météo et ajuster la stratégie en fonction des derniers modèles météo. L’objectif de ce projet est de naviguer de façon performante en utilisant toutes les dernières technologies. Par ailleurs, les Class40 sont des bateaux monotypes, comme les Minis de série, ce qui promet de belles bagares sur l’eau !</p>
         <% end %>
-        <%= c 'grid', layout: 'l--2fr s--2fr baseline no-gap' do %>
+      <% end %>
+      <%= c 'section', _custom_class: 'bg-white no-padding' do %>
+        <%= c 'grid', layout: 'l--2fr s--2fr no-gap' do %>
           <%= c 'media', image: 'rhino-mini.png', _custom_class: 'height-related half-on-mobile' %>
           <div class="gif-container">
             <%= c 'media', image: 'class.png', _image_class: 'gif-first-image', _custom_class: 'height-related half-on-mobile' %>
             <%= c 'media', image: 'sponsored-class40.gif', _image_class: 'gif-animation', _custom_class: 'height-related half-on-mobile' %>
           </div>
         <% end %>
+      <% end %>
+      <%= c 'card', _custom_class: 'large' do %>
         <%= c 'container', _custom_class: "very-small-and-centered" do %>
           <h2 class="center italic focus">Les Class 40 sont de gros minis !</h2>
           <p>Le Class40 est le bon compromis pour un bateau de course capable de faire le tour du monde à grande vitesse mais aussi d’emmener naviguer ses partenaires, le tout à coût modéré.</p>

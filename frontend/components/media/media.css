@@ -20,7 +20,8 @@
   .media {
     &.height-related.half-on-mobile {
       img {
-        height: 200px;
+        height: 190px;
+        max-width: 100%;
       }
     }
 
