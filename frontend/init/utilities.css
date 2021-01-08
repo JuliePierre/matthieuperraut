@@ -61,6 +61,13 @@ h4.underlined--white {
   color: var(--main);
 }
 
+span.underlined--yellow {
+  padding: 0.4em 0.4em 0.2em;
+  display: inline-flex;
+  line-height: 0.6em;
+  background-color: var(--yellow);
+}
+
 span.underlined--blue {
   display: inline-flex;
   background-color: var(--main);

@@ -18,6 +18,10 @@ section {
   &.no-padding {
     padding: 0;
   }
+
+  &.band {
+    height: 60vh;
+  }
 }
 
 @media (--screen-md) {

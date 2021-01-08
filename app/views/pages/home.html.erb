@@ -1,8 +1,11 @@
 <%= c 'page', page: 'home' do %>
+  <div class="hidden-on-mobile" style="position: absolute;z-index: 10;top: 104px;left: 26px;height: 35vh;">
+    <%= image_tag asset_pack_path('media/shared/static/logo-route-du-rhum-2022.png'), width: 'auto', height: '100%' %>
+  </div>
   <%= c 'hero', background_image: 'matthieu-perraut-mini-transat.jpg' do %>
     <div>
-      <h1 class="white">MATTHIEU PERRAUT</h1>
       <%= c 'container', _custom_class: "very-small-and-centered" do %>
+        <h1 class="white">MATTHIEU PERRAUT</h1>
         <div class="white">Architecte de formation, Matthieu a grandi en Bretagne où il a développé un amour de la mer et découvert les joies de la navigation. Il participe à l'édition 2019 de la Mini Transat, en solitaire et sans assistance, à bord d’un bateau de 6,50m, et traverse l’Atlantique en novembre 2019. Sa détermination et son engagement le portent pendant 3 ans dans la préparation de la course et dans l’atteinte de son objectif : arriver 5ème bateau de sa génération, en maîtrisant parfaitement son budget.</div>
       <% end %>
     </div>
@@ -22,7 +25,7 @@
     <%= c 'container' do %>
       <%= c 'grid', layout: 'l--2fr m--1fr s--1fr' do %>
         <%= c 'feature-box', with_background: true, _background_image: 'skipper-matthieu-perraut.png', _custom_class: 'with-shadow' do %>
-          <%= c 'title', title: 'Mon projet Mini Transat', _custom_class: 'main' %>
+          <%= c 'title', title: 'Mon projet Mini Transat 2019', _custom_class: 'main' %>
           <div class="center">
             <h4 class="white underlined--red">Un objectif personnel atteint :</h4><h4 class="white"> Etre au départ de la Mini Transat 2019</h4>
           </div>
@@ -84,6 +87,7 @@
       <%= c 'title', title: "Mon prochain défi", _custom_class: 'main' %>
       <%= c 'space', mobile_height: '2rem', desktop_height: '0rem' %>
       <%= c 'subtitle', subtitle: "Etre au départ de la Route du Rhum 2022",_custom_class: 'focus' %>
+      <%= c 'media', image: 'logo-route-du-rhum-2022.png', _custom_class: 'width-related hidden-on-desktop-only smaller-on-mobile' %>
       <div>
         <p>Comme l’a voulu son concepteur, Michel Etevenon, La Route Du Rhum est depuis 1978 la Transat de la Liberté : elle est la seule grande course transatlantique à rassembler sur la même ligne de départ et le même parcours monocoques et multicoques, petits coursiers océaniques et géants des mers. Addition d’aventures individuelles, de belles histoires qui se préparent pour certaines sur plusieurs années, on ne participe jamais à la Route du Rhum par hasard. On vient y chercher quelque chose d’unique, une intensité, des émotions fortes et inoubliables.</p>
         <p>La Route du Rhum compte aussi parmi les manifestations les plus populaires. Depuis sa première édition, la magie de cette transatlantique opère au départ de Saint-Malo. Tous les quatre ans, la cité corsaire ouvre en grand les portes de l’imaginaire marin et lance au public une formidable invitation : celle de l’évasion et de l’émerveillement devant le rêve d’absolu de navigateurs solitaires, des «va-t-en mer» parés à disputer un face à face avec l’océan d’une rare intensité...</p>
@@ -97,20 +101,15 @@
     <% end %>
   <% end %>
 
+  <%= c 'section', _background_image: 'arrivee-route-du-rhum.jpg', _custom_class: 'band' do %>
+  <% end %>
+
   <%= c 'section', _custom_class: 'bg-main no-padding' do %>
     <%= c 'container' do %>
       <%= c 'card', _custom_class: 'large' do %>
-        <%= c 'title', title: 'Trois ans de courses et de préparation', _custom_class: 'secondary-yellow-text' %>
+        <%= c 'title', title: 'Deux ans de courses et de préparation', _custom_class: 'secondary-yellow-text' %>
         <%= c 'space', desktop_height: '4rem', mobile_height: '2rem' %>
-        <%= c 'grid', layout: 'l--3fr m--3fr s--1fr' do %>
-          <div>
-            <%= c 'subtitle', subtitle: '2020', _custom_class: 'secondary' %>
-            <p>Grand Prix Guyader <span class="info">en équipage</span></p>
-            <p>Tour de Belle-Ile <span class="info">en équipage</span></p>
-            <p>Armen Race <span class="brand">en double</span></p>
-            <p>Cowes Dinard <span class="info">en équipage</span></p>
-            <p>Normandy Channel Race <span class="brand">en double</span></p>
-          </div>
+        <%= c 'grid', layout: 'l--2fr m--2fr s--1fr' do %>
           <div>
             <%= c 'subtitle', subtitle: '2021', _custom_class: 'secondary' %>
             <p>Grand Prix Guyader <span class="info">en équipage</span></p>
@@ -165,7 +164,8 @@
         <%= c 'space', mobile_height: '2rem', desktop_height: '0rem' %>
         <%= c 'subtitle', subtitle: 'Plus vite, plus haut, plus fort', _custom_class: 'main' %>
         <%= c 'container', _custom_class: "small-and-centered" do %>
-          <p> Un bateau plus grand et doté de technologies plus poussées. Le Class40 est équipé d’un système de navigation avec cartographie intégrée ainsi que d’un ordinateur de bord pour recevoir la météo et ajuster la stratégie en fonction des derniers modèles météo. L’objectif de ce projet est de naviguer de façon performante en utilisant toutes les dernières technologies. Par ailleurs, les Class40 sont des bateaux monotypes, comme les Minis de série, ce qui promet de belles bagares sur l’eau !</p>
+          <p>Nous avons lancé la construction d'un <span class="underlined--yellow">bateau neuf</span> pour atteindre les meilleurs résultats possibles. Sa mise à l'eau devrait avoir lieu à la fin de l'année 2021 !</p>
+          <p>Le Class40 est équipé d’un système de navigation avec cartographie intégrée ainsi que d’un ordinateur de bord pour recevoir la météo et ajuster la stratégie en fonction des derniers modèles météo. L’objectif de ce projet est de naviguer de façon performante en utilisant toutes les dernières technologies. Par ailleurs, les Class40 sont des bateaux monotypes, comme les Minis de série, ce qui promet de belles bagares sur l’eau !</p>
         <% end %>
       <% end %>
       <%= c 'card', _custom_class: 'large no-padding' do %>
@@ -179,9 +179,7 @@
       <% end %>
       <%= c 'card', _custom_class: 'large' do %>
         <%= c 'container', _custom_class: "very-small-and-centered" do %>
-          <h2 class="center italic focus">Les Class 40 sont de gros minis !</h2>
           <p>Le Class40 est le bon compromis pour un bateau de course capable de faire le tour du monde à grande vitesse mais aussi d’emmener naviguer ses partenaires, le tout à coût modéré.</p>
-          <p>L’objectif de ce projet est de naviguer sur un bateau récent et performant afin de <span class="white underlined--blue">viser les meilleures places possibles</span></p>
         <% end %>
         <div>
           <%= c 'button', text: 'Voir le site de la Class 40', path: 'https://www.class40.com/fr/index/', _target: '_blank' %>
@@ -197,11 +195,11 @@
           <%= c 'title', title: 'Le skipper', _custom_class: 'yellow-white-text' %>
           <%= c 'subtitle', subtitle: 'Matthieu Perraut' %>
           <p>30 ans, architecte, entrepreneur et navigateur passionné</p>
-          <p>Architecte de formation, Matthieu a grandi en Bretagne où il a développé un amour de la mer et découvert les joies de la navigation.</p>
-          <p>Il débute sa carrière professionnelle dans une agence d’architecture renommée à Paris avant de tout quitter en 2017 pour s’installer à Pornichet et réaliser son rêve de course au large en préparant la Mini Transat 2019.</p>
-          <p>Il participe donc à l’édition 2019 de cette course mythique, en solitaire et sans assistance, à bord d’un bateau de 6,50m, et traverse l’Atlantique en novembre 2019.</p>
-          <p>Sa détermination et son engagement le portent pendant 3 ans dans la préparation de la course et dans l’atteinte de son objectif : arriver 5ème bateau de sa génération, en maîtrisant parfaitement son budget.</p>
-          <p>Prochaine étape : se dédier à sa passion et participer à la Route du Rhum en 2022 à bord d’un Class40.</p>
+          <p>Architecte de formation, j'ai grandi en Bretagne où j'ai développé un amour de la mer et découvert les joies de la navigation.</p>
+          <p>J'ai débuté ma carrière professionnelle dans une agence d’architecture renommée à Paris avant de tout quitter en 2017 pour m’installer à Pornichet et réaliser mon rêve de course au large en préparant la Mini Transat 2019.</p>
+          <p>J'ai donc particité à l’édition 2019 de cette course mythique, en solitaire et sans assistance, à bord d’un bateau de 6,50m, et traversé l’Atlantique en novembre 2019.</p>
+          <p>Ma détermination et mon engagement m'ont porté pendant 3 ans dans la préparation de la course et dans l’atteinte de mon objectif : arriver 5ème bateau d'ancienne génération, en maîtrisant parfaitement mon budget.</p>
+          <p>Prochaine étape : me dédier à ma passion et participer à la Route du Rhum en 2022 à bord d’un Class40.</p>
           <div class="right">
             <h4 class="white underlined--red">"Embarquez avec moi !"</h4>
           </div>
@@ -209,6 +207,16 @@
         <%= c 'feature-box', with_background: true, _background_image: 'matthieu-perraut-skipper.png', _linear_gradient: '360deg, rgba(12,33,48,1), rgba(12,33,48,0.25) 100%', _custom_class: 'flex-end with-shadow' do %>
           <div>
             <%= c 'title', title: 'Palmarès', _custom_class: 'yellow-white-text' %>
+            <%= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
+            <h4>2020</h4>
+            <%= c 'grid', layout: 'l--2fr' do %>
+              <div>
+                <p class="no-margin">- Drheam Cup - sur le bateau Jess</p>
+              </div>
+              <div>
+                <p class="no-margin">3/3 - Catégorie Multi 2000</p>
+              </div>
+            <% end %>
             <%= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
             <h4>2019</h4>
             <%= c 'grid', layout: 'l--2fr' do %>
