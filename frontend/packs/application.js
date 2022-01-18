@@ -46,6 +46,7 @@ import 'shared/static/logo-class40.png'
 import 'shared/static/logo-route-du-rhum.svg'
 import 'shared/static/favicon.png'
 import 'shared/static/arrivee-route-du-rhum.jpg'
+import 'shared/static/arrivee-jacques-vabre.png'
 
 // ICONS
 import '@fortawesome/fontawesome-free/css/all.css'

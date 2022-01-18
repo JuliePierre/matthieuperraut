@@ -13,7 +13,7 @@
   &::after {
     content: '';
     position: absolute;
-    background-image: linear-gradient(360deg, rgba(12, 33, 48, 1) 15%, rgba(12, 33, 48, 0.5) 80%, rgba(12, 33, 48, 0.25) 100%);
+    background-image: linear-gradient(360deg, rgba(12, 33, 48, 1) 10%, rgba(12, 33, 48, 0.5) 25%, rgba(12, 33, 48, 0.25) 40%);
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -40,6 +40,18 @@
 
   &__button .btn {
     color: var(--secondary);
+  }
+
+  &__legend {
+    position: absolute;
+    bottom: 2rem;
+    color: white;
+    z-index: 10;
+    font-style: italic;
+    left: 3rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0;
   }
 }
 

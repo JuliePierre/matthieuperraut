@@ -1,72 +1,72 @@
 <%= c 'page', page: 'home' do %>
-  <div class="hidden-on-mobile" style="position: absolute;z-index: 10;top: 104px;left: 26px;height: 35vh;">
-    <%= image_tag asset_pack_path('media/shared/static/logo-route-du-rhum-2022.png'), width: 'auto', height: '100%' %>
-  </div>
-  <%= c 'hero', background_image: 'matthieu-perraut-mini-transat.jpg' do %>
+  <!-- <div class="hidden-on-mobile" style="position: absolute;z-index: 10;top: 104px;left: 26px;height: 35vh;">
+    <%#= image_tag asset_pack_path('media/shared/static/logo-route-du-rhum-2022.png'), width: 'auto', height: '100%' %>
+  </div> -->
+  <%= c 'hero', background_image: 'arrivee-jacques-vabre.png', legend: "Arrivée de la Transat Jacques Vabre 2021" do %>
     <div>
       <%= c 'container', _custom_class: "very-small-and-centered" do %>
         <h1 class="white">MATTHIEU PERRAUT</h1>
-        <div class="white">Architecte de formation, Matthieu a grandi en Bretagne où il a développé un amour de la mer et découvert les joies de la navigation. Il participe à l'édition 2019 de la Mini Transat, en solitaire et sans assistance, à bord d’un bateau de 6,50m, et traverse l’Atlantique en novembre 2019. Sa détermination et son engagement le portent pendant 3 ans dans la préparation de la course et dans l’atteinte de son objectif : arriver 5ème bateau de sa génération, en maîtrisant parfaitement son budget.</div>
+        <div class="white"> Architecte de formation, Matthieu a grandi en Bretagne où il a développé un amour de la mer et découvert les joies de la navigation. Il participe à l’édition 2019 de la Mini Transat, en solitaire et sans assistance, à bord d’un bateau de 6,50m, et traverse l’Atlantique en novembre 2019. En 2021 il se lance dans le grand bain et participe à la Transat Jacques Vabre en Class40. C’est le début de sa carrière de marin professionnel grâce à sa rencontre avec le groupe Inter Invest, avec qui il sera au départ de la prochaine Route du Rhum sur un Class40 de dernière génération puis sur la Transat Jacques Vabre de nouveau en 2023.</div>
       <% end %>
     </div>
-    <div>
-      <%= c 'title', title: "De la Mini Transat 2019", _custom_class: "main large left" %>
-      <%= c 'title', title: "A la Route du Rhum 2022", _custom_class: "main large right" %>
-    </div>
+    <!-- <div>
+      <%#= c 'title', title: "De la Mini Transat 2019", _custom_class: "main large left" %>
+      <%#= c 'title', title: "A la Route du Rhum 2022", _custom_class: "main large right" %>
+    </div> -->
   <% end %>
 
-  <%= c 'section', _custom_class: 'full-height no-padding' do %>
-    <%= c 'video-wrapper' do %>
-      <iframe width="560" height="349" src="https://www.youtube.com/embed/AFPQ7IpMDng" frameborder="0" allow="autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
-    <% end %>
-  <% end %>
+  <%#= c 'section', _custom_class: 'full-height no-padding' do %>
+    <%#= c 'video-wrapper' do %>
+      <!-- <iframe width="560" height="349" src="https://www.youtube.com/embed/AFPQ7IpMDng" frameborder="0" allow="autoplay; encrypted-media; gyroscope" allowfullscreen></iframe> -->
+    <%# end %>
+  <%# end %>
 
-  <%= c 'section', _id: 'mini-transat' do %>
-    <%= c 'container' do %>
-      <%= c 'grid', layout: 'l--2fr m--1fr s--1fr' do %>
-        <%= c 'feature-box', with_background: true, _background_image: 'skipper-matthieu-perraut.png', _custom_class: 'with-shadow' do %>
-          <%= c 'title', title: 'Mon projet Mini Transat 2019', _custom_class: 'main' %>
-          <div class="center">
+  <%#= c 'section', _id: 'mini-transat' do %>
+    <%#= c 'container' do %>
+      <%#= c 'grid', layout: 'l--2fr m--1fr s--1fr' do %>
+        <%#= c 'feature-box', with_background: true, _background_image: 'skipper-matthieu-perraut.png', _custom_class: 'with-shadow' do %>
+          <%#= c 'title', title: 'Mon projet Mini Transat 2019', _custom_class: 'main' %>
+          <!-- <div class="center">
             <h4 class="white underlined--red">Un objectif personnel atteint :</h4><h4 class="white"> Etre au départ de la Mini Transat 2019</h4>
-          </div>
-        <% end %>
-        <%= c 'feature-box', with_background: false, _custom_class: 'no-padding' do %>
-          <div class="right">
-            <%= c 'title', title: 'La plus dure des transats', _custom_class: 'secondary-yellow-text' %>
-            <%= c 'title', title: 'en course !', _custom_class: 'secondary-yellow-text' %>
-          </div>
-          <div>
-            <%= image_tag asset_pack_path('media/shared/static/logo-mini-transat.png'), width: '50%' %>
-          </div>
-          <div>
+          </div> -->
+        <%# end %>
+        <%#= c 'feature-box', with_background: false, _custom_class: 'no-padding' do %>
+          <!-- <div class="right">
+            <%#= c 'title', title: 'La plus dure des transats', _custom_class: 'secondary-yellow-text' %>
+            <%#= c 'title', title: 'en course !', _custom_class: 'secondary-yellow-text' %>
+          </div> -->
+          <!-- <div>
+            <%#= image_tag asset_pack_path('media/shared/static/logo-mini-transat.png'), width: '50%' %>
+          </div> -->
+          <!-- <div>
             <p class="no-margin">Une course en solitaire</p>
             <p class="no-margin">Sans assistance</p>
             <p class="no-margin">Sans aucune communication avec la terre</p>
             <p class="no-margin">Sur les plus petits bateaux de course au large</p>
-          </div>
-          <div>
-            <%= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
-            <%= c 'subtitle', subtitle: "\"Passe ta mini d'abord\"", _custom_class: 'center yellow' %>
+          </div> -->
+          <!-- <div>
+            <%#= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
+            <%#= c 'subtitle', subtitle: "\"Passe ta mini d'abord\"", _custom_class: 'center yellow' %>
           </div>
           <p>La Mini Transat a été créée pour réagir au gigantisme des courses transatlantiques qui sont organisées depuis les années 70. Fondée en 1977 par l’Anglais Bob Salmon, la Mini arrive sur le territoire français en 1985 et s’élance tour à tour de Brest, Concarneau à destination des Antilles. Puis de 2001 à 2011 de La Rochelle vers Salvador de Bahia au Brésil, les escales se succèdent dans l’archipel espagnol des Canaries ou sur l’île portugaise de Madère.</p>
           <p>La spécificité de la Mini Transat est l’absence de communication totale entre les concurrents et la terre. C’est cet isolement pendant la course qui fait la magie et le mystère de la Mini Transat. Véritable épreuve sportive courue sur les plus petits bateaux de course au large existants, la Mini n’en demeure pas moins une véritable aventure pour chacun des skippers.</p>
-          <p>De tous âges, de toutes classes sociales et d’expériences nautiques diverses, les marins viennent à la Mini pour réaliser le rêve d’une vie, s’élancer dans une carrière professionnelle de coureur, mais tous s’accordent à dire : « Passe ta Mini d’abord »</p>
-        <% end %>
-      <% end %>
-    <% end %>
-  <% end %>
+          <p>De tous âges, de toutes classes sociales et d’expériences nautiques diverses, les marins viennent à la Mini pour réaliser le rêve d’une vie, s’élancer dans une carrière professionnelle de coureur, mais tous s’accordent à dire : « Passe ta Mini d’abord »</p> -->
+        <%# end %>
+      <%# end %>
+    <%# end %>
+  <%# end %>
 
-  <%= c 'section', _background_image: 'transgascogne-matthieu-perraut.jpg', _custom_class: 'white small-padding' do %>
-    <%= c 'container', _custom_class: 'very-small' do %>
-      <%= c 'title', title: 'Un engagement personnel sur 3 ans',_custom_class: 'center secondary left' %>
-      <%= c 'title', title: 'pour une course couronnée de succès !',_custom_class: 'center secondary right' %>
-    <% end %>
-    <%= c 'space', desktop_height: '5rem', mobile_height: '5rem' %>
-    <%= c 'grid', layout: 'l--2fr s--1fr' do %>
-      <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
-        <%= c 'media', image: 'parcours-mini-transat-2019.png', _custom_class: 'width-related smaller-on-mobile' %>
-      <% end %>
-      <div class="padding-on-mobile">
+  <%#= c 'section', _background_image: 'transgascogne-matthieu-perraut.jpg', _custom_class: 'white small-padding' do %>
+    <%#= c 'container', _custom_class: 'very-small' do %>
+      <%#= c 'title', title: 'Un engagement personnel sur 3 ans',_custom_class: 'center secondary left' %>
+      <%#= c 'title', title: 'pour une course couronnée de succès !',_custom_class: 'center secondary right' %>
+    <%# end %>
+    <%#= c 'space', desktop_height: '5rem', mobile_height: '5rem' %>
+    <%#= c 'grid', layout: 'l--2fr s--1fr' do %>
+      <%#= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+        <%#= c 'media', image: 'parcours-mini-transat-2019.png', _custom_class: 'width-related smaller-on-mobile' %>
+      <%# end %>
+      <!-- <div class="padding-on-mobile">
         <h4>Une préparation physique et psychologique intense</h4>
         <h4>Une volonté à toute épreuve</h4>
         <h4>10 000 miles parcourus en course (soit 18 520km)</h4>
@@ -74,126 +74,126 @@
         <h4>Un bateau optimisé et fiabilisé par les soins de mon équipe et moi-même : <h4 class="white underlined--white">Rhino a foncé !</h4></h4>
         <h4>Un entretien complet et autonome les hivers pour limiter les coûts</h4>
         <h4>Un budget de 140 000€ maîtrisé</h4>
-      </div>
-    <% end %>
-    <%= c 'space', desktop_height: '5rem', mobile_height: '2rem' %>
-    <div class="center">
+      </div> -->
+    <%# end %>
+    <%#= c 'space', desktop_height: '5rem', mobile_height: '2rem' %>
+    <!-- <div class="center">
       <h4 class="white underlined--white">Une performance globale remarquable :</h4><h4 class="white"> 25ème bateau sur 65 sur la Mini Transat 2019 💪</h4>
-    </div>
-  <% end %>
+    </div> -->
+  <%# end %>
 
-  <%= c 'section', _custom_class: 'bg-main', _id: 'objectif' do %>
-    <%= c 'container', _custom_class: 'small-and-centered' do %>
-      <%= c 'title', title: "Mon prochain défi", _custom_class: 'main' %>
-      <%= c 'space', mobile_height: '2rem', desktop_height: '0rem' %>
-      <%= c 'subtitle', subtitle: "Etre au départ de la Route du Rhum 2022",_custom_class: 'focus' %>
-      <%= c 'media', image: 'logo-route-du-rhum-2022.png', _custom_class: 'width-related hidden-on-desktop-only smaller-on-mobile' %>
-      <div>
+  <%#= c 'section', _custom_class: 'bg-main', _id: 'objectif' do %>
+    <%#= c 'container', _custom_class: 'small-and-centered' do %>
+      <%#= c 'title', title: "Mon prochain défi", _custom_class: 'main' %>
+      <%#= c 'space', mobile_height: '2rem', desktop_height: '0rem' %>
+      <%#= c 'subtitle', subtitle: "Etre au départ de la Route du Rhum 2022",_custom_class: 'focus' %>
+      <%#= c 'media', image: 'logo-route-du-rhum-2022.png', _custom_class: 'width-related hidden-on-desktop-only smaller-on-mobile' %>
+      <!-- <div>
         <p>Comme l’a voulu son concepteur, Michel Etevenon, La Route Du Rhum est depuis 1978 la Transat de la Liberté : elle est la seule grande course transatlantique à rassembler sur la même ligne de départ et le même parcours monocoques et multicoques, petits coursiers océaniques et géants des mers. Addition d’aventures individuelles, de belles histoires qui se préparent pour certaines sur plusieurs années, on ne participe jamais à la Route du Rhum par hasard. On vient y chercher quelque chose d’unique, une intensité, des émotions fortes et inoubliables.</p>
         <p>La Route du Rhum compte aussi parmi les manifestations les plus populaires. Depuis sa première édition, la magie de cette transatlantique opère au départ de Saint-Malo. Tous les quatre ans, la cité corsaire ouvre en grand les portes de l’imaginaire marin et lance au public une formidable invitation : celle de l’évasion et de l’émerveillement devant le rêve d’absolu de navigateurs solitaires, des «va-t-en mer» parés à disputer un face à face avec l’océan d’une rare intensité...</p>
         <div class="center">
-          <%= c 'title', title: "\"Le Rhum est un rève de marin\"", _custom_class: 'center yellow-white-text' %>
+          <%#= c 'title', title: "\"Le Rhum est un rève de marin\"", _custom_class: 'center yellow-white-text' %>
         </div>
         <div class="center">
-          <%= c 'button', text: 'Voir le site de la Route du Rhum', path: 'https://www.routedurhum.com/fr', _target: '_blank', _custom_class: 'light' %>
+          <%#= c 'button', text: 'Voir le site de la Route du Rhum', path: 'https://www.routedurhum.com/fr', _target: '_blank', _custom_class: 'light' %>
         </div>
-      </div>
-    <% end %>
-  <% end %>
+      </div> -->
+    <%# end %>
+  <%# end %>
 
-  <%= c 'section', _background_image: 'arrivee-route-du-rhum.jpg', _custom_class: 'band' do %>
-  <% end %>
+  <%#= c 'section', _background_image: 'arrivee-route-du-rhum.jpg', _custom_class: 'band' do %>
+  <%# end %>
 
-  <%= c 'section', _custom_class: 'bg-main no-padding' do %>
-    <%= c 'container' do %>
-      <%= c 'card', _custom_class: 'large' do %>
-        <%= c 'title', title: 'Deux ans de courses et de préparation', _custom_class: 'secondary-yellow-text' %>
-        <%= c 'space', desktop_height: '4rem', mobile_height: '2rem' %>
-        <%= c 'grid', layout: 'l--2fr m--2fr s--1fr' do %>
-          <div>
-            <%= c 'subtitle', subtitle: '2021', _custom_class: 'secondary' %>
+  <%#= c 'section', _custom_class: 'bg-main no-padding' do %>
+    <%#= c 'container' do %>
+      <%#= c 'card', _custom_class: 'large' do %>
+        <%#= c 'title', title: 'Deux ans de courses et de préparation', _custom_class: 'secondary-yellow-text' %>
+        <%#= c 'space', desktop_height: '4rem', mobile_height: '2rem' %>
+        <%#= c 'grid', layout: 'l--2fr m--2fr s--1fr' do %>
+          <!-- <div>
+            <%#= c 'subtitle', subtitle: '2021', _custom_class: 'secondary' %>
             <p>Grand Prix Guyader <span class="info">en équipage</span></p>
             <p>Normandy Channel Race <span class="brand">en double</span></p>
             <p>Les Sables - Horta <span class="brand">en double</span></p>
             <p>Rolew Fastnet Race <span class="info">en équipage</span></p>
             <p>Transat Jacques Vabre <span class="brand">en double</span></p>
           </div>
-          <div>
-            <%= c 'subtitle', subtitle: '2022', _custom_class: 'secondary' %>
-            <p>Grand Prix Guyader <span class="info">en équipage</span></p>
+          <div> -->
+            <%#= c 'subtitle', subtitle: '2022', _custom_class: 'secondary' %>
+            <!-- <p>Grand Prix Guyader <span class="info">en équipage</span></p>
             <p>Armen Race <span class="brand">en double</span></p>
             <p>Drheam Cup <span class="focus">en solitaire</span></p>
             <p>Route du Rhum <span class="focus">en solitaire</span></p>
-          </div>
-        <% end %>
-      <% end %>
-    <% end %>
-  <% end %>
+          </div> -->
+        <%# end %>
+      <%# end %>
+    <%# end %>
+  <%# end %>
 
-  <%= c 'section', _background_image: 'mer-course-au-large.png', _custom_class: 'small-padding' do %>
-    <%= c 'container' do %>
-      <%= c 'title', title: 'La Route du Rhum 2018 en chiffres', _custom_class: 'main' %>
-      <%= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
-      <%= c 'grid', layout: 'l--6fr s--3fr' do %>
-        <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
-          <%= c 'content-box', number: '2,5M', text: 'de spectateurs' %>
-        <% end %>
-        <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
-          <%= c 'content-box', number: '200 000', text: 'visiteurs au départ' %>
-        <% end %>
-        <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
-          <%= c 'content-box', number: '12 000m2', text: 'de village' %>
-        <% end %>
-        <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
-          <%= c 'content-box', number: '18 000', text: 'embarqués au départ' %>
-        <% end %>
-        <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
-          <%= c 'content-box', number: '1 000', text: 'journalistes' %>
-        <% end %>
-        <%= c 'flex-box', _custom_class: 'flex-center space-around' do %>
-          <%= c 'content-box', number: '124', text: 'bateaux au départ' %>
-        <% end %>
-      <% end %>
-    <% end %>
-  <% end %>
+  <%#= c 'section', _background_image: 'mer-course-au-large.png', _custom_class: 'small-padding' do %>
+    <%#= c 'container' do %>
+      <%#= c 'title', title: 'La Route du Rhum 2018 en chiffres', _custom_class: 'main' %>
+      <%#= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
+      <%#= c 'grid', layout: 'l--6fr s--3fr' do %>
+        <%#= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+          <%#= c 'content-box', number: '2,5M', text: 'de spectateurs' %>
+        <%# end %>
+        <%#= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+          <%#= c 'content-box', number: '200 000', text: 'visiteurs au départ' %>
+        <%# end %>
+        <%#= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+          <%#= c 'content-box', number: '12 000m2', text: 'de village' %>
+        <%# end %>
+        <%#= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+          <%#= c 'content-box', number: '18 000', text: 'embarqués au départ' %>
+        <%# end %>
+        <%#= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+          <%#= c 'content-box', number: '1 000', text: 'journalistes' %>
+        <%# end %>
+        <%#= c 'flex-box', _custom_class: 'flex-center space-around' do %>
+          <%#= c 'content-box', number: '124', text: 'bateaux au départ' %>
+        <%# end %>
+      <%# end %>
+    <%# end %>
+  <%# end %>
 
-  <%= c 'section', _custom_class: 'bg-main no-padding', _id: 'bateau' do %>
-    <%= c 'container' do %>
-      <%= c 'card', _custom_class: 'large' do %>
-        <%= c 'title', title: 'Le bateau', _custom_class: 'yellow' %>
-        <%= c 'space', mobile_height: '2rem', desktop_height: '0rem' %>
-        <%= c 'subtitle', subtitle: 'Plus vite, plus haut, plus fort', _custom_class: 'main' %>
-        <%= c 'container', _custom_class: "small-and-centered" do %>
-          <p>Nous avons lancé la construction d'un <span class="underlined--yellow">bateau neuf</span> pour atteindre les meilleurs résultats possibles. Sa mise à l'eau devrait avoir lieu à la fin de l'année 2021 !</p>
-          <p>Le Class40 est équipé d’un système de navigation avec cartographie intégrée ainsi que d’un ordinateur de bord pour recevoir la météo et ajuster la stratégie en fonction des derniers modèles météo. L’objectif de ce projet est de naviguer de façon performante en utilisant toutes les dernières technologies. Par ailleurs, les Class40 sont des bateaux monotypes, comme les Minis de série, ce qui promet de belles bagares sur l’eau !</p>
-        <% end %>
-      <% end %>
-      <%= c 'card', _custom_class: 'large no-padding' do %>
-        <%= c 'grid', layout: 'l--2fr s--2fr no-gap' do %>
-          <%= c 'media', image: 'rhino-mini.png', _custom_class: 'height-related half-on-mobile' %>
-          <div class="gif-container">
-            <%= c 'media', image: 'class.png', _image_class: 'gif-first-image', _custom_class: 'height-related half-on-mobile' %>
-            <%= c 'media', image: 'sponsored-class40.gif', _image_class: 'gif-animation', _custom_class: 'height-related half-on-mobile' %>
-          </div>
-        <% end %>
-      <% end %>
-      <%= c 'card', _custom_class: 'large' do %>
-        <%= c 'container', _custom_class: "very-small-and-centered" do %>
-          <p>Le Class40 est le bon compromis pour un bateau de course capable de faire le tour du monde à grande vitesse mais aussi d’emmener naviguer ses partenaires, le tout à coût modéré.</p>
-        <% end %>
+  <%#= c 'section', _custom_class: 'bg-main no-padding', _id: 'bateau' do %>
+    <%#= c 'container' do %>
+      <%#= c 'card', _custom_class: 'large' do %>
+        <%#= c 'title', title: 'Le bateau', _custom_class: 'yellow' %>
+        <%#= c 'space', mobile_height: '2rem', desktop_height: '0rem' %>
+        <%#= c 'subtitle', subtitle: 'Plus vite, plus haut, plus fort', _custom_class: 'main' %>
+        <%#= c 'container', _custom_class: "small-and-centered" do %>
+          <!-- <p>Nous avons lancé la construction d'un <span class="underlined--yellow">bateau neuf</span> pour atteindre les meilleurs résultats possibles. Sa mise à l'eau devrait avoir lieu à la fin de l'année 2021 !</p>
+          <p>Le Class40 est équipé d’un système de navigation avec cartographie intégrée ainsi que d’un ordinateur de bord pour recevoir la météo et ajuster la stratégie en fonction des derniers modèles météo. L’objectif de ce projet est de naviguer de façon performante en utilisant toutes les dernières technologies. Par ailleurs, les Class40 sont des bateaux monotypes, comme les Minis de série, ce qui promet de belles bagares sur l’eau !</p> -->
+        <%# end %>
+      <%# end %>
+      <%#= c 'card', _custom_class: 'large no-padding' do %>
+        <%#= c 'grid', layout: 'l--2fr s--2fr no-gap' do %>
+          <%#= c 'media', image: 'rhino-mini.png', _custom_class: 'height-related half-on-mobile' %>
+       <!--    <div class="gif-container">
+            <%#= c 'media', image: 'class.png', _image_class: 'gif-first-image', _custom_class: 'height-related half-on-mobile' %>
+            <%#= c 'media', image: 'sponsored-class40.gif', _image_class: 'gif-animation', _custom_class: 'height-related half-on-mobile' %>
+          </div> -->
+        <%# end %>
+      <%# end %>
+      <%#= c 'card', _custom_class: 'large' do %>
+        <%#= c 'container', _custom_class: "very-small-and-centered" do %>
+          <!-- <p>Le Class40 est le bon compromis pour un bateau de course capable de faire le tour du monde à grande vitesse mais aussi d’emmener naviguer ses partenaires, le tout à coût modéré.</p>
+        <%# end %>
         <div>
-          <%= c 'button', text: 'Voir le site de la Class 40', path: 'https://www.class40.com/fr/index/', _target: '_blank' %>
+          <%#= c 'button', text: 'Voir le site de la Class 40', path: 'https://www.class40.com/fr/index/', _target: '_blank' %>
         </div>
-      <% end %>
-    <% end %>
-  <% end %>
+      <%# end %>
+    <%# end %>
+  <%# end %> -->
 
-  <%= c 'section', _custom_class: 'bg-main', _id: 'skipper' do %>
-    <%= c 'container' do %>
-      <%= c 'grid', layout: 'l--2fr m--1fr s--1fr' do %>
-        <div class="white">
-          <%= c 'title', title: 'Le skipper', _custom_class: 'yellow-white-text' %>
-          <%= c 'subtitle', subtitle: 'Matthieu Perraut' %>
+  <%#= c 'section', _custom_class: 'bg-main', _id: 'skipper' do %>
+    <%#= c 'container' do %>
+      <%#= c 'grid', layout: 'l--2fr m--1fr s--1fr' do %>
+        <!-- <div class="white">
+          <%#= c 'title', title: 'Le skipper', _custom_class: 'yellow-white-text' %>
+          <%#= c 'subtitle', subtitle: 'Matthieu Perraut' %>
           <p>30 ans, architecte, entrepreneur et navigateur passionné</p>
           <p>Architecte de formation, j'ai grandi en Bretagne où j'ai développé un amour de la mer et découvert les joies de la navigation.</p>
           <p>J'ai débuté ma carrière professionnelle dans une agence d’architecture renommée à Paris avant de tout quitter en 2017 pour m’installer à Pornichet et réaliser mon rêve de course au large en préparant la Mini Transat 2019.</p>
@@ -203,24 +203,24 @@
           <div class="right">
             <h4 class="white underlined--red">"Embarquez avec moi !"</h4>
           </div>
-        </div>
-        <%= c 'feature-box', with_background: true, _background_image: 'matthieu-perraut-skipper.png', _linear_gradient: '360deg, rgba(12,33,48,1), rgba(12,33,48,0.25) 100%', _custom_class: 'flex-end with-shadow' do %>
-          <div>
-            <%= c 'title', title: 'Palmarès', _custom_class: 'yellow-white-text' %>
-            <%= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
-            <h4>2020</h4>
-            <%= c 'grid', layout: 'l--2fr' do %>
-              <div>
+        </div> -->
+        <%#= c 'feature-box', with_background: true, _background_image: 'matthieu-perraut-skipper.png', _linear_gradient: '360deg, rgba(12,33,48,1), rgba(12,33,48,0.25) 100%', _custom_class: 'flex-end with-shadow' do %>
+        <!--   <div> -->
+            <%#= c 'title', title: 'Palmarès', _custom_class: 'yellow-white-text' %>
+            <%#= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
+          <!--   <h4>2020</h4> -->
+            <%#= c 'grid', layout: 'l--2fr' do %>
+             <!--  <div>
                 <p class="no-margin">- Drheam Cup - sur le bateau Jess</p>
               </div>
               <div>
                 <p class="no-margin">3/3 - Catégorie Multi 2000</p>
-              </div>
-            <% end %>
-            <%= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
-            <h4>2019</h4>
-            <%= c 'grid', layout: 'l--2fr' do %>
-              <div>
+              </div> -->
+            <%# end %>
+            <%#= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
+            <!-- <h4>2019</h4> -->
+            <%#= c 'grid', layout: 'l--2fr' do %>
+              <!-- <div>
                 <p class="no-margin">- Mini Transat 2019</p>
                 <p class="no-margin">- Transgascogne</p>
                 <p class="no-margin">- Pornichet Select</p>
@@ -229,12 +229,12 @@
                 <p class="no-margin">25 / 65</p>
                 <p class="no-margin">17 / 48</p>
                 <p class="no-margin">25 / 60</p>
-              </div>
-            <% end %>
-            <%= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
-            <h4>2018</h4>
-            <%= c 'grid', layout: 'l--2fr' do %>
-              <div>
+              </div> -->
+            <%# end %>
+            <%#= c 'space', desktop_height: '2rem', mobile_height: '2rem' %>
+            <!-- <h4>2018</h4> -->
+            <%#= c 'grid', layout: 'l--2fr' do %>
+              <!-- <div>
                 <p class="no-margin">- Les Sables - Les Açores</p>
                 <p class="no-margin">- Mini Fastnet</p>
                 <p class="no-margin">- Mini en Mai</p>
@@ -247,45 +247,45 @@
                 <p class="no-margin">22 / 48</p>
                 <p class="no-margin">22 / 60</p>
                 <p class="no-margin">19 / 41</p>
-              </div>
-            <% end %>
-          </div>
-        <% end %>
-      <% end %>
-    <% end %>
-  <% end %>
+              </div> -->
+            <%# end %>
+          <!-- </div> -->
+        <%# end %>
+      <%# end %>
+    <%# end %>
+  <%# end %>
 
-  <%= c 'section', _id: 'mediatheque' do %>
-    <%= c 'container' do %>
-      <%= c 'title', title: 'Mon parcours en images', _custom_class: 'secondary-yellow-text' %>
-      <%= c 'space', desktop_height: '4rem', mobile_height: '2rem' %>
-      <%= c 'grid', layout: 'special-media' do %>
-        <div class="media one" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-transat.jpg') %>')"></div>
+  <%#= c 'section', _id: 'mediatheque' do %>
+    <%#= c 'container' do %>
+      <%#= c 'title', title: 'Mon parcours en images', _custom_class: 'secondary-yellow-text' %>
+      <%#= c 'space', desktop_height: '4rem', mobile_height: '2rem' %>
+      <%#= c 'grid', layout: 'special-media' do %>
+        <!-- <div class="media one" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-transat.jpg') %>')"></div>
         <div class="media two" style="background-image: url('<%= asset_pack_path('media/shared/static/transgascogne-matthieu-perraut.jpg') %>')"></div>
         <div class="media three" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-transat-2019.jpg') %>')"></div>
         <div class="media four" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-wichard.jpg') %>')"></div>
         <div class="media five" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-coucher-soleil.jpg') %>')"></div>
-        <div class="media six" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-prologue.jpg') %>')"></div>
-      <% end %>
-      <%= c 'button', text: "Voir plus de photos & vidéos", path: mediatheque_path %>
-    <% end %>
-  <% end %>
+        <div class="media six" style="background-image: url('<%= asset_pack_path('media/shared/static/rhino-mini-prologue.jpg') %>')"></div> -->
+      <%# end %>
+      <%#= c 'button', text: "Voir plus de photos & vidéos", path: mediatheque_path %>
+    <%# end %>
+  <%# end %>
 
-  <%= c 'section', _id: 'partenaires', _custom_class: "no-padding" do %>
-    <%= c 'container' do %>
-      <%= c 'title', title: "Ils m'accompagnent !", _custom_class: 'secondary-yellow-text' %>
-      <%= c 'space', desktop_height: '4rem', mobile_height: '2rem' %>
-      <%= c 'grid', layout: 'l--3fr s--3fr' do %>
-        <div class="media media--with-link" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-helly-hansen.png') %>')"><a href="https://www.hellyhansen.com/fr_fr/" target="_blank"></a></div>
+  <%#= c 'section', _id: 'partenaires', _custom_class: "no-padding" do %>
+    <%#= c 'container' do %>
+      <%#= c 'title', title: "Ils m'accompagnent !", _custom_class: 'secondary-yellow-text' %>
+      <%#= c 'space', desktop_height: '4rem', mobile_height: '2rem' %>
+      <%#= c 'grid', layout: 'l--3fr s--3fr' do %>
+        <!-- <div class="media media--with-link" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-helly-hansen.png') %>')"><a href="https://www.hellyhansen.com/fr_fr/" target="_blank"></a></div>
         <div class="media media--with-link" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-atelier-lemee.svg') %>')"><a href="https://www.eurodrapeau.com/" target="_blank"></a></div>
-        <div class="media media--with-link" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-wichard.svg') %>')"><a href="https://marine.wichard.com/version-francaise.html" target="_blank"></a></div>
-      <% end %>
-      <%= c 'space', desktop_height: '4rem', mobile_height: '4rem' %>
-      <%= c 'grid', layout: 'l--3fr s--3fr' do %>
-        <div class="media media--with-link" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-profurl.jpg') %>')"><a href="https://www.profurl.com/" target="_blank"></a></div>
-        <div class="media media--with-link" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-eole.svg') %>')"><a href="https://eolegreement.fr/" target="_blank"></a></div>
-      <% end %>
-    <% end %>
-    <%= c 'space', desktop_height: '5rem', mobile_height: '4rem' %>
-  <% end %>
+        <div class="media media--with-link" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-wichard.svg') %>')"><a href="https://marine.wichard.com/version-francaise.html" target="_blank"></a></div> -->
+      <%# end %>
+      <%#= c 'space', desktop_height: '4rem', mobile_height: '4rem' %>
+      <%#= c 'grid', layout: 'l--3fr s--3fr' do %>
+        <!-- <div class="media media--with-link" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-profurl.jpg') %>')"><a href="https://www.profurl.com/" target="_blank"></a></div>
+        <div class="media media--with-link" style="background-image: url('<%= asset_pack_path('media/shared/static/logo-eole.svg') %>')"><a href="https://eolegreement.fr/" target="_blank"></a></div> -->
+      <%# end %>
+    <%# end %>
+    <%#= c 'space', desktop_height: '5rem', mobile_height: '4rem' %>
+  <%# end %>
 <% end %>
